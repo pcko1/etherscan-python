@@ -23,15 +23,15 @@ class Client:
                 f"{api_key}"
             )
             r = requests.get(url)
-            return parser.get_result(r)
+            return (parser.get_result(r), parser.get_status(r), parser.get_message(r))
 
         return wrapper
 
     @classmethod
     def from_config(cls, config_path: str, api_key: str):
         config = cls.__load_config(config_path)
-        for k, v in config.items():
-            if not k.startswith("_"):
-                attr = getattr(getattr(etherscan, v), k)
-                setattr(cls, k, cls.__auth(attr, api_key))
+        for func, v in config.items():
+            if not func.startswith("_"):
+                attr = getattr(getattr(etherscan, v["module"]), func)
+                setattr(cls, func, cls.__auth(attr, api_key))
         return cls
