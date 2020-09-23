@@ -1,2 +1,0 @@
-class Transactions:
-    pass
