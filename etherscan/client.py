@@ -4,7 +4,7 @@ import requests
 
 import etherscan
 from etherscan.enums.fields_enum import FieldsEnum as fields
-from etherscan.parsing import ResponseParser as parser
+from etherscan.utils.parsing import ResponseParser as parser
 
 
 class Client:
