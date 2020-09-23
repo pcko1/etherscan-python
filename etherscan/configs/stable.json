@@ -1,0 +1,14 @@
+{
+    "get_eth_balance": "accounts",
+    "get_eth_balance_multiple": "accounts",
+    "get_hist_eth_balance_by_block": "accounts",
+    "get_normal_txs_by_address": "accounts",
+    "get_normal_txs_by_address_paginated": "accounts",
+    "get_internal_txs_by_address": "accounts",
+    "get_internal_txs_by_address_paginated": "accounts",
+    "get_internal_txs_by_txhash": "accounts",
+    "get_internal_txs_by_block_range_paginated": "accounts",
+    "get_erc20_token_transfer_events_by_address": "accounts",
+    "get_erc721_token_transfer_events_by_address": "accounts",
+    "get_mined_blocks_by_address": "accounts"
+}
