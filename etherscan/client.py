@@ -1,39 +1,37 @@
-import requests as req
+import json
+
+import requests
+
+import etherscan
+from etherscan.enums.fields_enum import FieldsEnum as fields
+from etherscan.parsing import ResponseParser as parser
 
 
 class Client:
-    def __init__(self, api_key: str):
-        self.api_key = api_key
+    @staticmethod
+    def __load_config(config_path: str) -> dict:
+        with open(config_path, "r") as f:
+            return json.load(f)
 
-    # accounts
-    def get_eth_balance(self, wallet: str):
-        pass
+    @staticmethod
+    def __auth(func, api_key):
+        def wrapper(*args, **kwargs):
+            url = (
+                f"{fields.PREFIX}"
+                f"{func(*args, **kwargs)}"
+                f"{fields.API_KEY}"
+                f"{api_key}"
+            )
+            r = requests.get(url)
+            return parser.get_result(r)
 
-    def get_eth_balance_multiple(self):
-        pass
+        return wrapper
 
-    def get_hist_eth_balance(self):
-        # throttled to 2 calls/sec
-        pass
-
-    def get_normal_txs_by_address(self):
-        pass
-
-    def get_internal_txs_by_address(self):
-        pass
-
-    def get_internal_txs_by_txhash(self):
-        pass
-
-    def get_internal_txs_by_block_range(self):
-        pass
-
-    def get_erc20_transfer_events_by_address(self):
-        pass
-
-    def get_erc721_transfer_events_by_address(self):
-        pass
-
-    def get_mined_blocks_by_address(self):
-        pass
-
+    @classmethod
+    def from_config(cls, config_path: str, api_key: str):
+        config = cls.__load_config(config_path)
+        for k, v in config.items():
+            if not k.startswith("_"):
+                attr = getattr(getattr(etherscan, v), k)
+                setattr(cls, k, cls.__auth(attr, api_key))
+        return cls
