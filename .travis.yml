@@ -14,3 +14,4 @@ install:
   - pip install .
 script:
   - bash run_tests.sh
+  - bash <(curl -s https://codecov.io/bash)
