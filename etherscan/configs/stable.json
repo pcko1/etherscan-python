@@ -1,4 +1,41 @@
 {
+  "get_total_supply_by_contract_address": {
+    "module": "tokens",
+    "kwargs": {
+      "contract": "0x57d90b64a1a57749b0f932f1a3395792e12e7055"
+    }
+  },
+  "get_acc_balance_by_token_and_contract_address": {
+    "module": "tokens",
+    "kwargs": {
+      "contract": "0x57d90b64a1a57749b0f932f1a3395792e12e7055",
+      "token": "0xe04f27eb70e025b78871a2ad7eabe85e61212761"
+    }
+  },
+  "get_contract_abi": {
+    "module": "contracts",
+    "kwargs": {
+      "contract": "0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413"
+    }
+  },
+  "get_contract_source_code": {
+    "module": "contracts",
+    "kwargs": {
+      "contract": "0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413"
+    }
+  },
+  "check_contract_execution_status": {
+    "module": "transactions",
+    "kwargs": {
+      "txhash": "0x15f8e5ea1079d9a0bb04a4c58ae5fe7654b5b2b4463375ff7ffb490aa0032f3a"
+    }
+  },
+  "check_tx_receipt_status": {
+    "module": "transactions",
+    "kwargs": {
+      "txhash": "0x513c1ba0bebf66436b5fed86ab668452b7805593c05073eb2d51d3a52f480a76"
+    }
+  },
   "get_eth_balance": {
     "module": "accounts",
     "kwargs": {
@@ -13,13 +50,6 @@
         "0x63a9975ba31b0b9626b34300f7f627147df1f526",
         "0x198ef1ec325a96cc354c7266a038be8b5c558f67"
       ]
-    }
-  },
-  "get_hist_eth_balance_by_block": {
-    "module": "accounts",
-    "kwargs": {
-      "wallet": "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae",
-      "block": 8000000
     }
   },
   "get_normal_txs_by_address": {
