@@ -11,10 +11,10 @@ class ActionsEnum:
     GET_SOURCE_CODE: str = "getsourcecode"
     GET_STATUS: str = "getstatus"
     GET_TX_RECEIPT_STATUS: str = "gettxreceiptstatus"
+    TOKEN_BALANCE: str = "tokenbalance"
+    TOKEN_SUPPLY: str = "tokensupply"
     TOKENNFTTX: str = "tokennfttx"
     TOKENTX: str = "tokentx"
-    TOKEN_SUPPLY: str = "tokensupply"
-    TOKEN_BALANCE: str = "tokenbalance"
     TXLIST_INTERNAL: str = "txlistinternal"
     TXLIST: str = "txlist"
 
