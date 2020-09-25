@@ -5,6 +5,7 @@ from dataclasses import dataclass
 class ModulesEnum:
     ACCOUNT: str = "account"
     CONTRACT: str = "contract"
-    TRANSACTION: str = "transaction"
+    STATS: str = "stats"
     TOKEN: str = "token"
+    TRANSACTION: str = "transaction"
 
