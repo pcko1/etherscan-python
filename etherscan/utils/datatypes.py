@@ -1,6 +1,7 @@
 from etherscan.enums.messages_enum import MessagesEnum as msgs
 
 _CONTRACT_LEN = 42
+_TOKEN_LEN = 42
 _TX_LEN = 66
 _WALLET_LEN = 42
 
@@ -36,6 +37,12 @@ class BaseAddress:
 class ContractAddress(BaseAddress):
     def __init__(self, address: str):
         self._maxlen = _CONTRACT_LEN
+        self._address = self._check_len(self._check_0x(address))
+
+
+class TokenAddress(BaseAddress):
+    def __init__(self, address: str):
+        self._maxlen = _TOKEN_LEN
         self._address = self._check_len(self._check_0x(address))
 
 
