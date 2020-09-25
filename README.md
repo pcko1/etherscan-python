@@ -1,1 +1,1 @@
-Intuitive python API for etherscan.io.
+Minimal python API for etherscan.io.
