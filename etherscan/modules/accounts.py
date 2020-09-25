@@ -44,22 +44,6 @@ class Accounts:
         # return [conversions.to_ticker_unit(r["balance"]) for r in parser.get_result(r)]
 
     @staticmethod
-    def get_hist_eth_balance_by_block(wallet: WalletAddress, block: int) -> str:
-        # throttled to 2 calls/sec
-        # BUG: returns 'Error! Missing Or invalid Action name'
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.BALANCE_HISTORY}"
-            f"{fields.ADDRESS}"
-            f"{wallet}"
-            f"{fields.BLOCKNO}"
-            f"{str(block)}"
-        )
-        return url
-
-    @staticmethod
     def get_normal_txs_by_address(
         wallet: WalletAddress,
         startblock: int = 0000,
