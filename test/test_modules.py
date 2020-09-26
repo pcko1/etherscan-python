@@ -20,10 +20,10 @@ class Case(TestCase):
         config = load(_CONFIG_PATH)
         client = Client.from_config(_CONFIG_PATH, _API_KEY)
         for fun, v in config.items():
-            if not fun.startswith("_"):
+            if not fun.startswith("_"):  # disabled if _
                 if v["module"] == self._MODULE:
-                    res, status, msg = getattr(client, fun)(**v["kwargs"])
-                    print(f"METHOD: {fun}, RTYPE: {type(res)}, STATUS: {status}")
+                    res, _ = getattr(client, fun)(**v["kwargs"])
+                    print(f"METHOD: {fun}, RTYPE: {type(res)}")
 
 
 class TestAccounts(Case):
