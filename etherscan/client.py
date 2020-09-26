@@ -1,4 +1,5 @@
 import json
+from functools import wraps
 
 import requests
 
@@ -14,7 +15,8 @@ class Client:
             return json.load(f)
 
     @staticmethod
-    def __auth(func, api_key):
+    def __run(func, api_key):
+        # decorator to authorize and get urls
         def wrapper(*args, **kwargs):
             url = (
                 f"{fields.PREFIX}"
@@ -27,11 +29,21 @@ class Client:
 
         return wrapper
 
+    @staticmethod
+    def __check_status(func):
+        # decorator to assert message status
+        def wrapper(*args, **kwargs):
+            res, status, msg = func(*args, **kwargs)
+            assert bool(status), msg
+            return (res, msg)
+
+        return wrapper
+
     @classmethod
     def from_config(cls, config_path: str, api_key: str):
         config = cls.__load_config(config_path)
         for func, v in config.items():
             if not func.startswith("_"):  # disabled if _
                 attr = getattr(getattr(etherscan, v["module"]), func)
-                setattr(cls, func, cls.__auth(attr, api_key))
+                setattr(cls, func, cls.__check_status(cls.__run(attr, api_key)))
         return cls
