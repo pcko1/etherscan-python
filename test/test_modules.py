@@ -13,7 +13,7 @@ def load(fname):
         return json.load(f)
 
 
-class TestModule(TestCase):
+class Case(TestCase):
     _MODULE = ""
 
     def test_methods(self):
@@ -24,20 +24,20 @@ class TestModule(TestCase):
             if not fun.startswith("_"):
                 if v["module"] == self._MODULE:
                     res, status, msg = getattr(client, fun)(**v["kwargs"])
-                    print(f"METHOD: {fun}, STATUS: {status}")
+                    print(f"METHOD: {fun}, RTYPE: {type(res)}, STATUS: {status}")
 
 
-class TestAccounts(TestModule):
+class TestAccounts(Case):
     _MODULE = "accounts"
 
 
-class TestContracts(TestModule):
+class TestContracts(Case):
     _MODULE = "contracts"
 
 
-class TestTokens(TestModule):
+class TestTokens(Case):
     _MODULE = "tokens"
 
 
-class TestTransactions(TestModule):
+class TestTransactions(Case):
     _MODULE = "transactions"
