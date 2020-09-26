@@ -2,7 +2,6 @@ from unittest import TestCase
 import json
 
 from etherscan.client import Client
-from etherscan.utils.datatypes import ContractAddress, TxHash, WalletAddress
 
 _CONFIG_PATH = "etherscan/configs/stable.json"
 _API_KEY = "3PTZ5UHY7I9GGD74FJY6SXYS6JSVY295E5"
