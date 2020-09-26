@@ -31,7 +31,7 @@ class Client:
     def from_config(cls, config_path: str, api_key: str):
         config = cls.__load_config(config_path)
         for func, v in config.items():
-            if not func.startswith("_"):
+            if not func.startswith("_"):  # disabled if _
                 attr = getattr(getattr(etherscan, v["module"]), func)
                 setattr(cls, func, cls.__auth(attr, api_key))
         return cls

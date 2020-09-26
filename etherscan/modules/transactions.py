@@ -1,4 +1,3 @@
-from etherscan.utils.datatypes import TxHash
 from etherscan.enums.actions_enum import ActionsEnum as actions
 from etherscan.enums.fields_enum import FieldsEnum as fields
 from etherscan.enums.modules_enum import ModulesEnum as modules
@@ -6,7 +5,14 @@ from etherscan.enums.modules_enum import ModulesEnum as modules
 
 class Transactions:
     @staticmethod
-    def check_contract_execution_status(txhash: TxHash) -> str:
+    def check_contract_execution_status(txhash: str) -> str:
+        """Return status of contract execution.
+
+        :param txhash: Transaction hash
+        :type txhash: str
+        :return: The url to get
+        :rtype: str
+        """
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"
@@ -18,7 +24,14 @@ class Transactions:
         return url
 
     @staticmethod
-    def check_tx_receipt_status(txhash: TxHash) -> str:
+    def check_tx_receipt_status(txhash: str) -> str:
+        """Return transaction receipt status.
+
+        :param txhash: Transaction hash
+        :type txhash: str
+        :return: The url to get
+        :rtype: str
+        """
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"
