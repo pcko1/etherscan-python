@@ -9,7 +9,7 @@ class ResponseParser:
     @staticmethod
     def get_status(response: requests.Response):
         c = ResponseParser._get_content(response)
-        return c["status"]
+        return int(c["status"])
 
     @staticmethod
     def get_message(response: requests.Response):
