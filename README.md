@@ -37,4 +37,4 @@ pip install .
  ````
 
 ___
-Powered by [Etherscan.io APIs(https://etherscan.io/apis)].
+Powered by [Etherscan.io APIs](https://etherscan.io/apis).
