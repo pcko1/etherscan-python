@@ -12,6 +12,11 @@ def load(fname):
         return json.load(f)
 
 
+def dump(data, fname):
+    with open(fname, "w") as f:
+        json.dump(data, f, indent=2)
+
+
 class Case(TestCase):
     _MODULE = ""
 
@@ -24,6 +29,15 @@ class Case(TestCase):
                 if v["module"] == self._MODULE:
                     res = getattr(etherscan, fun)(**v["kwargs"])
                     print(f"METHOD: {fun}, RTYPE: {type(res)}")
+                    # Create log files (will update existing ones)
+                    fname = f"logs/{fun}.json"
+                    log = {
+                        "name": fun,
+                        "module": v["module"],
+                        "kwargs": v["kwargs"],
+                        "res": res,
+                    }
+                    dump(log, fname)
 
 
 class TestAccounts(Case):
