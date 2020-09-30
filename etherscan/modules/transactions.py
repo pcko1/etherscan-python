@@ -5,7 +5,7 @@ from etherscan.enums.modules_enum import ModulesEnum as modules
 
 class Transactions:
     @staticmethod
-    def check_contract_execution_status(txhash: str) -> str:
+    def get_contract_execution_status(txhash: str) -> str:
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"
@@ -17,7 +17,7 @@ class Transactions:
         return url
 
     @staticmethod
-    def check_tx_receipt_status(txhash: str) -> str:
+    def get_tx_receipt_status(txhash: str) -> str:
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"
