@@ -1,11 +1,12 @@
 {
-  "name": "get_mined_blocks_by_address_paginated",
+  "method": "get_mined_blocks_by_address_paginated",
   "module": "accounts",
   "kwargs": {
     "address": "0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b",
     "page": 1,
     "offset": 100
   },
+  "timestamp": "2020-09-30-15:39:14",
   "res": [
     {
       "blockNumber": "3462296",

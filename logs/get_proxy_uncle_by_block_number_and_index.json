@@ -1,10 +1,11 @@
 {
-  "name": "get_proxy_uncle_by_block_number_and_index",
+  "method": "get_proxy_uncle_by_block_number_and_index",
   "module": "proxy",
   "kwargs": {
     "tag": "0x210A9B",
     "index": "0x0"
   },
+  "timestamp": "2020-09-30-15:39:32",
   "res": {
     "difficulty": "0x3db79ff5de86",
     "extraData": "0x7777772e62772e636f6d",

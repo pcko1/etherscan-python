@@ -1,11 +1,12 @@
 {
-  "name": "get_gas_oracle",
+  "method": "get_gas_oracle",
   "module": "gastracker",
   "kwargs": {},
+  "timestamp": "2020-09-30-15:39:26",
   "res": {
-    "LastBlock": "10964360",
-    "SafeGasPrice": "113",
-    "ProposeGasPrice": "122",
-    "FastGasPrice": "130"
+    "LastBlock": "10964607",
+    "SafeGasPrice": "124",
+    "ProposeGasPrice": "134",
+    "FastGasPrice": "140"
   }
 }

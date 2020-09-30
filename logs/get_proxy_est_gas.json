@@ -1,5 +1,5 @@
 {
-  "name": "get_proxy_est_gas",
+  "method": "get_proxy_est_gas",
   "module": "proxy",
   "kwargs": {
     "data": "0x4e71d92d",
@@ -8,5 +8,6 @@
     "gas_price": "0x51da038cc",
     "gas": "0x5f5e0ff"
   },
+  "timestamp": "2020-09-30-15:39:48",
   "res": "0x14d1e"
 }

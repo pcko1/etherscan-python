@@ -1,8 +1,9 @@
 {
-  "name": "get_proxy_transaction_count",
+  "method": "get_proxy_transaction_count",
   "module": "proxy",
   "kwargs": {
     "address": "0x2910543af39aba0cd09dbb2d50200b3e800a63d2"
   },
+  "timestamp": "2020-09-30-15:39:38",
   "res": "0xaf62"
 }

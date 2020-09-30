@@ -1,8 +1,9 @@
 {
-  "name": "get_total_supply_by_contract_address",
+  "method": "get_total_supply_by_contract_address",
   "module": "tokens",
   "kwargs": {
     "contract_address": "0x57d90b64a1a57749b0f932f1a3395792e12e7055"
   },
+  "timestamp": "2020-09-30-15:39:54",
   "res": "21265524714464"
 }

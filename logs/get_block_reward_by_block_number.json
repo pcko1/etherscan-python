@@ -1,9 +1,10 @@
 {
-  "name": "get_block_reward_by_block_number",
+  "method": "get_block_reward_by_block_number",
   "module": "blocks",
   "kwargs": {
     "block_no": "2165403"
   },
+  "timestamp": "2020-09-30-15:39:15",
   "res": {
     "blockNumber": "2165403",
     "timeStamp": "1472533979",

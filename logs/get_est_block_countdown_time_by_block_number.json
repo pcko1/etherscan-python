@@ -1,13 +1,14 @@
 {
-  "name": "get_est_block_countdown_time_by_block_number",
+  "method": "get_est_block_countdown_time_by_block_number",
   "module": "blocks",
   "kwargs": {
     "block_no": "99999999"
   },
+  "timestamp": "2020-09-30-15:39:17",
   "res": {
-    "CurrentBlock": "10964360",
+    "CurrentBlock": "10964607",
     "CountdownBlock": "99999999",
-    "RemainingBlock": "89035639",
-    "EstimateTimeInSec": "1193077577.6"
+    "RemainingBlock": "89035392",
+    "EstimateTimeInSec": "1193074267.8"
   }
 }

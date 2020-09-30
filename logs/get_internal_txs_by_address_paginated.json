@@ -1,5 +1,5 @@
 {
-  "name": "get_internal_txs_by_address_paginated",
+  "method": "get_internal_txs_by_address_paginated",
   "module": "accounts",
   "kwargs": {
     "address": "0x2c1ba59d6f58433fb1eaee7d20b26ed83bda51a3",
@@ -9,6 +9,7 @@
     "offset": 10,
     "sort": "asc"
   },
+  "timestamp": "2020-09-30-15:38:48",
   "res": [
     {
       "blockNumber": "2535368",

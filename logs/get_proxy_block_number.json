@@ -1,6 +1,7 @@
 {
-  "name": "get_proxy_block_number",
+  "method": "get_proxy_block_number",
   "module": "proxy",
   "kwargs": {},
-  "res": "0xa74d88"
+  "timestamp": "2020-09-30-15:39:28",
+  "res": "0xa74e7f"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "get_internal_txs_by_block_range_paginated",
+  "method": "get_internal_txs_by_block_range_paginated",
   "module": "accounts",
   "kwargs": {
     "startblock": 0,
@@ -8,6 +8,7 @@
     "offset": 10,
     "sort": "asc"
   },
+  "timestamp": "2020-09-30-15:38:51",
   "res": [
     {
       "blockNumber": "50107",

@@ -1,10 +1,11 @@
 {
-  "name": "get_proxy_transaction_by_block_number_and_index",
+  "method": "get_proxy_transaction_by_block_number_and_index",
   "module": "proxy",
   "kwargs": {
     "tag": "0x10d4f",
     "index": "0x0"
   },
+  "timestamp": "2020-09-30-15:39:37",
   "res": {
     "blockHash": "0x7eb7c23a5ac2f2d70aa1ba4e5c56d89de5ac993590e5f6e79c394e290d998ba8",
     "blockNumber": "0x10d4f",

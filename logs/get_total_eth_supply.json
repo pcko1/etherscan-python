@@ -1,6 +1,7 @@
 {
-  "name": "get_total_eth_supply",
+  "method": "get_total_eth_supply",
   "module": "stats",
   "kwargs": {},
-  "res": "112815763374000000000000000"
+  "timestamp": "2020-09-30-15:39:49",
+  "res": "112816287124000000000000000"
 }

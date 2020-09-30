@@ -1,5 +1,5 @@
 {
-  "name": "get_eth_nodes_size",
+  "method": "get_eth_nodes_size",
   "module": "stats",
   "kwargs": {
     "start_date": "2019-02-01",
@@ -8,6 +8,7 @@
     "sync_mode": "default",
     "sort": "asc"
   },
+  "timestamp": "2020-09-30-15:39:52",
   "res": [
     {
       "blockNumber": "7156164",

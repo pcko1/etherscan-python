@@ -1,8 +1,9 @@
 {
-  "name": "get_est_confirmation_time",
+  "method": "get_est_confirmation_time",
   "module": "gastracker",
   "kwargs": {
     "gas_price": "2000000000"
   },
-  "res": "2904"
+  "timestamp": "2020-09-30-15:39:24",
+  "res": "3797"
 }
