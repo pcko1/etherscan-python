@@ -4,9 +4,14 @@
 # pyc files
 *pyc*
 
-# .coverage
+# coverage
 *coverage*
 
+# VSCode
+.vscode/*
+
+# Sphinx
+docs
 
 # keys and wallets
 etherscan/enums/keys_enum.py
