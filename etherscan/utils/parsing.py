@@ -9,8 +9,6 @@ class ResponseParser:
         if "status" in content.keys():
             status = bool(int(content["status"]))
             message = content["message"]
-            # if not status:
-            #     warnings.warn(f"{result} -- {message}")
             assert status, f"{result} -- {message}"
         else:
             # GETH or Parity proxy msg format
