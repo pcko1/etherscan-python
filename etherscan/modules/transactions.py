@@ -6,13 +6,6 @@ from etherscan.enums.modules_enum import ModulesEnum as modules
 class Transactions:
     @staticmethod
     def check_contract_execution_status(txhash: str) -> str:
-        """Return status of contract execution.
-
-        :param txhash: Transaction hash
-        :type txhash: str
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"
@@ -25,13 +18,6 @@ class Transactions:
 
     @staticmethod
     def check_tx_receipt_status(txhash: str) -> str:
-        """Return transaction receipt status.
-
-        :param txhash: Transaction hash
-        :type txhash: str
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"

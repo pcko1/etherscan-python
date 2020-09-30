@@ -7,13 +7,6 @@ from etherscan.enums.tags_enum import TagsEnum as tags
 class Tokens:
     @staticmethod
     def get_total_supply_by_contract_address(contract_address: str) -> str:
-        """Get total supply of tokens for a contract address.
-
-        :param contract_address: Contract address
-        :type contract_address: str
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.STATS}"
@@ -28,15 +21,6 @@ class Tokens:
     def get_acc_balance_by_token_and_contract_address(
         contract_address: str, address: str
     ) -> str:
-        """Return ERC20 token balance for a wallet by contract/token address.
-
-        :param contract_address: The contract/token address
-        :type contract_address: str
-        :param address: Wallet address
-        :type address: str
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"

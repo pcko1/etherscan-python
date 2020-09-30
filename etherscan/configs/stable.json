@@ -1,4 +1,133 @@
 {
+  "get_proxy_block_number": {
+    "module": "proxy",
+    "kwargs": {}
+  },
+  "get_proxy_block_by_number": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x10d4f"
+    }
+  },
+  "get_proxy_uncle_by_block_number_and_index": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x210A9B",
+      "index": "0x0"
+    }
+  },
+  "get_proxy_block_transaction_count_by_number": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x10FB78"
+    }
+  },
+  "get_proxy_transaction_by_hash": {
+    "module": "proxy",
+    "kwargs": {
+      "txhash": "0x1e2910a262b1008d0616a0beb24c1a491d78771baa54a33e66065e03b1f46bc1"
+    }
+  },
+  "get_proxy_transaction_by_block_number_and_index": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x10d4f",
+      "index": "0x0"
+    }
+  },
+  "get_proxy_transaction_count": {
+    "module": "proxy",
+    "kwargs": {
+      "address": "0x2910543af39aba0cd09dbb2d50200b3e800a63d2"
+    }
+  },
+  "get_proxy_transaction_receipt": {
+    "module": "proxy",
+    "kwargs": {
+      "txhash": "0x1e2910a262b1008d0616a0beb24c1a491d78771baa54a33e66065e03b1f46bc1"
+    }
+  },
+  "get_proxy_call": {
+    "module": "proxy",
+    "kwargs": {
+      "to": "0xAEEF46DB4855E25702F8237E8f403FddcaF931C0",
+      "data": "0x70a08231000000000000000000000000e16359506c028e51f16be38986ec5746251e9724"
+    }
+  },
+  "get_proxy_code_at": {
+    "module": "proxy",
+    "kwargs": {
+      "address": "0xf75e354c5edc8efed9b59ee9f67a80845ade7d0c"
+    }
+  },
+  "get_proxy_storage_position_at": {
+    "module": "proxy",
+    "kwargs": {
+      "position": "0x0",
+      "address": "0x6e03d9cce9d60f3e9f2597e13cd4c54c55330cfd"
+    }
+  },
+  "get_proxy_gas_price": {
+    "module": "proxy",
+    "kwargs": {}
+  },
+  "get_proxy_est_gas": {
+    "module": "proxy",
+    "kwargs": {
+      "data": "0x4e71d92d",
+      "to": "0xf0160428a8552ac9bb7e050d90eeade4ddd52843",
+      "value": "0xff22",
+      "gas_price": "0x51da038cc",
+      "gas": "0x5f5e0ff"
+    }
+  },
+  "get_est_confirmation_time": {
+    "module": "gastracker",
+    "kwargs": {
+      "gas_price": "2000000000"
+    }
+  },
+  "get_gas_oracle": {
+    "module": "gastracker",
+    "kwargs": {}
+  },
+  "get_block_reward_by_block_number": {
+    "module": "blocks",
+    "kwargs": {
+      "block_no": "2165403"
+    }
+  },
+  "get_est_block_countdown_time_by_block_number": {
+    "module": "blocks",
+    "kwargs": {
+      "block_no": "99999999"
+    }
+  },
+  "get_block_number_by_timestamp": {
+    "module": "blocks",
+    "kwargs": {
+      "timestamp": "1578638524",
+      "closest": "before"
+    }
+  },
+  "get_total_eth_supply": {
+    "module": "stats",
+    "kwargs": {}
+  },
+  "get_eth_last_price": {
+    "module": "stats",
+    "kwargs": {}
+  },
+  "get_eth_nodes_size": {
+    "module": "stats",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "client_type": "geth",
+      "sync_mode": "default",
+      "sort": "asc"
+    }
+  },
   "get_total_supply_by_contract_address": {
     "module": "tokens",
     "kwargs": {
@@ -117,6 +246,25 @@
       "sort": "asc"
     }
   },
+  "get_erc20_token_transfer_events_by_contract_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "contract_address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
+  "get_erc20_token_transfer_events_by_address_and_contract_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "contract_address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+      "address": "0x4e83362442b8d1bec281594cea3050c8eb01311c",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
   "get_erc721_token_transfer_events_by_address": {
     "module": "accounts",
     "kwargs": {
@@ -126,10 +274,37 @@
       "sort": "asc"
     }
   },
+  "get_erc721_token_transfer_events_by_contract_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "contract_address": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
+  "get_erc721_token_transfer_events_by_address_and_contract_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "contract_address": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
+      "address": "0x6975be450864c02b4613023c2152ee0743572325",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
   "get_mined_blocks_by_address": {
     "module": "accounts",
     "kwargs": {
       "address": "0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b"
+    }
+  },
+  "get_mined_blocks_by_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b",
+      "page": 1,
+      "offset": 100
     }
   }
 }

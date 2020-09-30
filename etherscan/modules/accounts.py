@@ -10,13 +10,6 @@ from etherscan.enums.tags_enum import TagsEnum as tags
 class Accounts:
     @staticmethod
     def get_eth_balance(address: str) -> str:
-        """Returns ether balance for a single wallet.
-
-        :param address: Wallet address
-        :type address: str
-        :return: The url to get 
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -33,13 +26,7 @@ class Accounts:
 
     @staticmethod
     def get_eth_balance_multiple(addresses: List[str]) -> str:
-        """Returns ether balance for a list of wallets. Max of 20 wallets at a time.
-
-        :param addresses: List of wallets
-        :type addresses: List[str]
-        :return: The url to get
-        :rtype: str
-        """
+        # NOTE: Max 20 wallets at a time
         address_list = reduce(lambda w1, w2: str(w1) + "," + str(w2), addresses)
         url = (
             f"{fields.MODULE}"
@@ -57,25 +44,9 @@ class Accounts:
 
     @staticmethod
     def get_normal_txs_by_address(
-        address: str,
-        startblock: int = 0000,
-        endblock: int = 99999999,
-        sort: str = "asc",
+        address: str, startblock: int, endblock: int, sort: str,
     ) -> str:
-        """Returns the last 10k normal transactions for an address.
-
-        :param address: Wallet address
-        :type address: str
-        :param startblock: Starting block, defaults to 0000
-        :type startblock: int, optional
-        :param endblock: Ending block, defaults to 99999999
-        :type endblock: int, optional
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
-        # last 10,000 txs only
+        # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -94,30 +65,8 @@ class Accounts:
 
     @staticmethod
     def get_normal_txs_by_address_paginated(
-        address: str,
-        page: int,
-        offset: int,
-        startblock: int = 0000,
-        endblock: int = 99999999,
-        sort: str = "asc",
+        address: str, page: int, offset: int, startblock: int, endblock: int, sort: str,
     ) -> str:
-        """Returns the paginated normal transactions for an address.
-
-        :param address: Wallet address
-        :type address: str
-        :param page: Page number
-        :type page: int
-        :param offset: Max records to return
-        :type offset: int
-        :param startblock: Starting block, defaults to 0000
-        :type startblock: int, optional
-        :param endblock: Ending block, defaults to 99999999
-        :type endblock: int, optional
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -140,24 +89,9 @@ class Accounts:
 
     @staticmethod
     def get_internal_txs_by_address(
-        address: str,
-        startblock: int = 0000,
-        endblock: int = 99999999,
-        sort: str = "asc",
+        address: str, startblock: int, endblock: int, sort: str,
     ) -> str:
-        """Returns the last 10k internal transactions for an address.
-
-        :param address: Wallet address
-        :type address: str
-        :param startblock: Starting block, defaults to 0000
-        :type startblock: int, optional
-        :param endblock: Ending block, defaults to 99999999
-        :type endblock: int, optional
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
+        # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -176,30 +110,8 @@ class Accounts:
 
     @staticmethod
     def get_internal_txs_by_address_paginated(
-        address: str,
-        page: int,
-        offset: int,
-        startblock: int = 0000,
-        endblock: int = 99999999,
-        sort: str = "asc",
+        address: str, page: int, offset: int, startblock: int, endblock: int, sort: str,
     ) -> str:
-        """Returns the paginated internal transactions for an address.
-
-        :param address: Wallet address
-        :type address: str
-        :param page: Page number
-        :type page: int
-        :param offset: Max records to return
-        :type offset: int
-        :param startblock: Starting block, defaults to 0000
-        :type startblock: int, optional
-        :param endblock: Ending block, defaults to 99999999
-        :type endblock: int, optional
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -222,13 +134,7 @@ class Accounts:
 
     @staticmethod
     def get_internal_txs_by_txhash(txhash: str) -> str:
-        """Returns the last 10k internal transactions for a transaction hash.
-
-        :param txhash: Transaction hash
-        :type txhash: str
-        :return: The url to get
-        :rtype: str
-        """
+        # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -241,23 +147,9 @@ class Accounts:
 
     @staticmethod
     def get_internal_txs_by_block_range_paginated(
-        startblock: int, endblock: int, page: int, offset: int, sort: str = "asc",
+        startblock: int, endblock: int, page: int, offset: int, sort: str,
     ) -> str:
-        """Returns the last 10k paginated internal transactions for a block range.
-
-        :param startblock: Starting block
-        :type startblock: int
-        :param endblock: Ending block
-        :type endblock: int
-        :param page: Page number
-        :type page: int
-        :param offset: Max records to return
-        :type offset: int
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
+        # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -278,21 +170,9 @@ class Accounts:
 
     @staticmethod
     def get_erc20_token_transfer_events_by_address(
-        address: str, startblock: int = 0, endblock: int = 999999999, sort: str = "asc",
+        address: str, startblock: int, endblock: int, sort: str,
     ) -> str:
-        """Returns the last 10k ERC20 token transfer events for an address.
-
-        :param address: Wallet address
-        :type address: str
-        :param startblock: Starting block, defaults to 0
-        :type startblock: int, optional
-        :param endblock: Ending block, defaults to 999999999
-        :type endblock: int, optional
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
+        # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -310,22 +190,53 @@ class Accounts:
         return url
 
     @staticmethod
-    def get_erc721_token_transfer_events_by_address(
-        address: str, startblock: int = 0, endblock: int = 999999999, sort: str = "asc",
+    def get_erc20_token_transfer_events_by_contract_address_paginated(
+        contract_address: str, page: int, offset: int, sort: str
     ) -> str:
-        """Returns the last 10k ERC721 token transfer events for an address.
 
-        :param address: Wallet address
-        :type address: str
-        :param startblock: Starting block, defaults to 0
-        :type startblock: int, optional
-        :param endblock: Ending block, defaults to 999999999
-        :type endblock: int, optional
-        :param sort: Sort results, defaults to "asc"
-        :type sort: str, optional
-        :return: The url to get
-        :rtype: str
-        """
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.ACCOUNT}"
+            f"{fields.ACTION}"
+            f"{actions.TOKENTX}"
+            f"{fields.CONTRACT_ADDRESS}"
+            f"{contract_address}"
+            f"{fields.SORT}"
+            f"{sort}"
+            f"{fields.PAGE}"
+            f"{str(page)}"
+            f"{fields.OFFSET}"
+            f"{str(offset)}"
+        )
+        return url
+
+    @staticmethod
+    def get_erc20_token_transfer_events_by_address_and_contract_paginated(
+        contract_address: str, address: str, page: int, offset: int, sort: str
+    ) -> str:
+
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.ACCOUNT}"
+            f"{fields.ACTION}"
+            f"{actions.TOKENTX}"
+            f"{fields.CONTRACT_ADDRESS}"
+            f"{contract_address}"
+            f"{fields.ADDRESS}"
+            f"{address}"
+            f"{fields.SORT}"
+            f"{sort}"
+            f"{fields.PAGE}"
+            f"{str(page)}"
+            f"{fields.OFFSET}"
+            f"{str(offset)}"
+        )
+        return url
+
+    @staticmethod
+    def get_erc721_token_transfer_events_by_address(
+        address: str, startblock: int, endblock: int, sort: str,
+    ) -> str:
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -343,14 +254,49 @@ class Accounts:
         return url
 
     @staticmethod
-    def get_mined_blocks_by_address(address: str) -> str:
-        """Returns list of blocks mined by an address.
+    def get_erc721_token_transfer_events_by_contract_address_paginated(
+        contract_address: str, page: int, offset: int, sort: str
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.ACCOUNT}"
+            f"{fields.ACTION}"
+            f"{actions.TOKENNFTTX}"
+            f"{fields.CONTRACT_ADDRESS}"
+            f"{contract_address}"
+            f"{fields.SORT}"
+            f"{sort}"
+            f"{fields.PAGE}"
+            f"{str(page)}"
+            f"{fields.OFFSET}"
+            f"{str(offset)}"
+        )
+        return url
 
-        :param address: Wallet address
-        :type address: str
-        :return: The url to get
-        :rtype: str
-        """
+    @staticmethod
+    def get_erc721_token_transfer_events_by_address_and_contract_paginated(
+        contract_address: str, address: str, page: int, offset: int, sort: str
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.ACCOUNT}"
+            f"{fields.ACTION}"
+            f"{actions.TOKENNFTTX}"
+            f"{fields.CONTRACT_ADDRESS}"
+            f"{contract_address}"
+            f"{fields.ADDRESS}"
+            f"{address}"
+            f"{fields.SORT}"
+            f"{sort}"
+            f"{fields.PAGE}"
+            f"{str(page)}"
+            f"{fields.OFFSET}"
+            f"{str(offset)}"
+        )
+        return url
+
+    @staticmethod
+    def get_mined_blocks_by_address(address: str) -> str:
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -360,5 +306,25 @@ class Accounts:
             f"{address}"
             f"{fields.BLOCK_TYPE}"
             f"blocks"
+        )
+        return url
+
+    @staticmethod
+    def get_mined_blocks_by_address_paginated(
+        address: str, page: int, offset: int
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.ACCOUNT}"
+            f"{fields.ACTION}"
+            f"{actions.GET_MINED_BLOCKS}"
+            f"{fields.ADDRESS}"
+            f"{address}"
+            f"{fields.BLOCK_TYPE}"
+            f"blocks"
+            f"{fields.PAGE}"
+            f"{str(page)}"
+            f"{fields.OFFSET}"
+            f"{str(offset)}"
         )
         return url

@@ -1,22 +1,21 @@
 import requests
+import warnings
 
 
 class ResponseParser:
     @staticmethod
-    def _get_content(response: requests.Response):
-        return response.json()
-
-    @staticmethod
-    def get_status(response: requests.Response):
-        c = ResponseParser._get_content(response)
-        return int(c["status"])
-
-    @staticmethod
-    def get_message(response: requests.Response):
-        c = ResponseParser._get_content(response)
-        return c["message"]
-
-    @staticmethod
-    def get_result(response: requests.Response):
-        c = ResponseParser._get_content(response)
-        return c["result"]
+    def parse(response: requests.Response):
+        content = response.json()
+        result = content["result"]
+        if "status" in content.keys():
+            status = bool(int(content["status"]))
+            message = content["message"]
+            if not status:
+                warnings.warn(f"{result} -- {message}")
+            # assert status, f"{result} -- {message}"
+        else:
+            # GETH or Parity proxy msg format
+            # TODO: see if we need those values
+            jsonrpc = content["jsonrpc"]
+            cid = int(content["id"])
+        return result

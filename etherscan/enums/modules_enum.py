@@ -4,6 +4,7 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class ModulesEnum:
     ACCOUNT: str = "account"
+    BLOCK: str = "block"
     CONTRACT: str = "contract"
     GASTRACKER: str = "gastracker"
     PROXY: str = "proxy"

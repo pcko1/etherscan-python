@@ -6,13 +6,6 @@ from etherscan.enums.modules_enum import ModulesEnum as modules
 class Contracts:
     @staticmethod
     def get_contract_abi(address: str) -> str:
-        """Return ABI for a specific contract.
-
-        :param address: Contract address
-        :type address: str
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.CONTRACT}"
@@ -25,13 +18,6 @@ class Contracts:
 
     @staticmethod
     def get_contract_source_code(address: str) -> str:
-        """Return the source for a specific contract.
-
-        :param address: Contract address
-        :type address: str
-        :return: The url to get
-        :rtype: str
-        """
         url = (
             f"{fields.MODULE}"
             f"{modules.CONTRACT}"
