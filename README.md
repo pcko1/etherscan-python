@@ -1,16 +1,16 @@
-[![Build Status](https://travis-ci.com/pcko1/etherscan-python.svg?branch=master)](https://travis-ci.com/pcko1/etherscan-python) 
-[![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 
-![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 
 # etherscan-python
 
-A minimal python API for [etherscan.io](etherscan.io). 
+A minimal python API for [etherscan.io](etherscan.io).
 
-Most of the free webhooks from the [Accounts](https://etherscan.io/apis#accounts), [Contracts](https://etherscan.io/apis#contracts), [Transactions](https://etherscan.io/apis#transactions) and [Tokens](https://etherscan.io/apis#tokens) modules are supported.
+[![Build Status](https://travis-ci.com/pcko1/etherscan-python.svg?branch=master)](https://travis-ci.com/pcko1/etherscan-python) 
+[![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
+![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
+___
 
- Their example use-cases are summarized [here](https://api.etherscan.io/apis).
+Most of the free webhooks from the [Accounts](https://etherscan.io/apis#accounts), [Contracts](https://etherscan.io/apis#contracts), [Transactions](https://etherscan.io/apis#transactions) and [Tokens](https://etherscan.io/apis#tokens) modules are supported. Their example use-cases are summarized [here](https://api.etherscan.io/apis).
 
 ## Installation
 
@@ -42,7 +42,7 @@ conda activate etherscan-python && bash run_tests.sh
 
 ## Usage
 
-In `python` , create a client with your personal etherscan.io API key:
+In `python`, create a client with your personal etherscan.io API key:
 
 ``` python
 from etherscan.client import Client
