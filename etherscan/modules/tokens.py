@@ -13,7 +13,7 @@ class Tokens:
             f"{fields.ACTION}"
             f"{actions.TOKEN_SUPPLY}"
             f"{fields.CONTRACT_ADDRESS}"
-            f"{str}"
+            f"{contract_address}"
         )
         return url
 
