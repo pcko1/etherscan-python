@@ -1,5 +1,6 @@
-from unittest import TestCase
 import json
+from datetime import datetime
+from unittest import TestCase
 
 from etherscan.etherscan import Etherscan
 
@@ -32,9 +33,10 @@ class Case(TestCase):
                     # Create log files (will update existing ones)
                     fname = f"logs/{fun}.json"
                     log = {
-                        "name": fun,
+                        "method": fun,
                         "module": v["module"],
                         "kwargs": v["kwargs"],
+                        "timestamp": datetime.now().strftime("%Y-%m-%d-%H:%M:%S"),
                         "res": res,
                     }
                     dump(log, fname)
