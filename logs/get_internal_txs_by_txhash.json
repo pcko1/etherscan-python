@@ -1,0 +1,23 @@
+{
+  "name": "get_internal_txs_by_txhash",
+  "module": "accounts",
+  "kwargs": {
+    "txhash": "0x40eb908387324f2b575b4879cd9d7188f69c8fc9d87c901b9e2daaea4b442170"
+  },
+  "res": [
+    {
+      "blockNumber": "1743059",
+      "timeStamp": "1466489498",
+      "from": "0x2cac6e4b11d6b58f6d3c1c9d5fe8faa89f60e5a2",
+      "to": "0x66a1c3eaf0f1ffc28d209c0763ed0ca614f3b002",
+      "value": "7106740000000000",
+      "contractAddress": "",
+      "input": "",
+      "type": "call",
+      "gas": "2300",
+      "gasUsed": "0",
+      "isError": "0",
+      "errCode": ""
+    }
+  ]
+}

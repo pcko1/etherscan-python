@@ -1,0 +1,11 @@
+{
+  "name": "get_gas_oracle",
+  "module": "gastracker",
+  "kwargs": {},
+  "res": {
+    "LastBlock": "10964360",
+    "SafeGasPrice": "113",
+    "ProposeGasPrice": "122",
+    "FastGasPrice": "130"
+  }
+}

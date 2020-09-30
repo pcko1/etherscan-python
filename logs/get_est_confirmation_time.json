@@ -1,0 +1,8 @@
+{
+  "name": "get_est_confirmation_time",
+  "module": "gastracker",
+  "kwargs": {
+    "gas_price": "2000000000"
+  },
+  "res": "2904"
+}

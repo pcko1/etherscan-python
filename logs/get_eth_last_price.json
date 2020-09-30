@@ -1,0 +1,11 @@
+{
+  "name": "get_eth_last_price",
+  "module": "stats",
+  "kwargs": {},
+  "res": {
+    "ethbtc": "0.03312",
+    "ethbtc_timestamp": "1601477039",
+    "ethusd": "356.06",
+    "ethusd_timestamp": "1601477039"
+  }
+}

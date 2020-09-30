@@ -1,0 +1,6 @@
+{
+  "name": "get_total_eth_supply",
+  "module": "stats",
+  "kwargs": {},
+  "res": "112815763374000000000000000"
+}

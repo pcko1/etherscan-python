@@ -1,0 +1,8 @@
+{
+  "name": "get_proxy_transaction_count",
+  "module": "proxy",
+  "kwargs": {
+    "address": "0x2910543af39aba0cd09dbb2d50200b3e800a63d2"
+  },
+  "res": "0xaf62"
+}

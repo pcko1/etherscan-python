@@ -1,0 +1,6 @@
+{
+  "name": "get_proxy_block_number",
+  "module": "proxy",
+  "kwargs": {},
+  "res": "0xa74d88"
+}

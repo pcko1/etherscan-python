@@ -1,0 +1,12 @@
+{
+  "name": "get_proxy_est_gas",
+  "module": "proxy",
+  "kwargs": {
+    "data": "0x4e71d92d",
+    "to": "0xf0160428a8552ac9bb7e050d90eeade4ddd52843",
+    "value": "0xff22",
+    "gas_price": "0x51da038cc",
+    "gas": "0x5f5e0ff"
+  },
+  "res": "0x14d1e"
+}
