@@ -26,33 +26,33 @@ class Case(TestCase):
                     print(f"METHOD: {fun}, RTYPE: {type(res)}")
 
 
-# class TestAccounts(Case):
-#     _MODULE = "accounts"
+class TestAccounts(Case):
+    _MODULE = "accounts"
 
 
-# class TestBlocks(Case):
-#     _MODULE = "blocks"
+class TestBlocks(Case):
+    _MODULE = "blocks"
 
 
-# class TestContracts(Case):
-#     _MODULE = "contracts"
+class TestContracts(Case):
+    _MODULE = "contracts"
 
 
-# class TestGasTracker(Case):
-#     _MODULE = "gastracker"
+class TestGasTracker(Case):
+    _MODULE = "gastracker"
 
 
 class TestProxy(Case):
     _MODULE = "proxy"
 
 
-# class TestStats(Case):
-#     _MODULE = "stats"
+class TestStats(Case):
+    _MODULE = "stats"
 
 
-# class TestTokens(Case):
-#     _MODULE = "tokens"
+class TestTokens(Case):
+    _MODULE = "tokens"
 
 
-# class TestTransactions(Case):
-#     _MODULE = "transactions"
+class TestTransactions(Case):
+    _MODULE = "transactions"
