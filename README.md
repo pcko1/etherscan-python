@@ -5,7 +5,6 @@ A minimal python API for [etherscan.io](etherscan.io).
 [![Build Status](https://travis-ci.com/pcko1/etherscan-python.svg?branch=master)](https://travis-ci.com/pcko1/etherscan-python) 
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
-
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 
 ___
@@ -37,7 +36,7 @@ pip install .
 ## Run unittests
 
 ``` bash
-conda activate etherscan-python && bash run_tests.sh
+bash run_tests.sh
 ````
 
 ## Usage
@@ -45,21 +44,23 @@ conda activate etherscan-python && bash run_tests.sh
 In `python` , create a client with your personal etherscan.io API key:
 
 ``` python
-from etherscan.client import Client
+from etherscan import Etherscan
 
 api_key = YOUR_API_KEY
 config_path = "etherscan/configs/stable.json"
 
-client = Client.from_config(config_path, api_key)
+eth = Etherscan.from_config(config_path, api_key)
 ```
 
 Then you can call all available methods, e.g.:
 
 ``` python
-client.get_eth_balance(address="0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a")
+eth.get_eth_balance(address="0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a")
 
-> ('40891631566070000000000', 'OK')
+> '40891631566070000000000'
 ```
+
+Examples (arguments and results) for all methods may be found as JSON files [here](https://github.com/pcko1/etherscan-python/tree/master/logs).
 
 ___
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
