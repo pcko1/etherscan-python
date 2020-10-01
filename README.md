@@ -105,7 +105,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-If you think that a newly-added method is missing, also open an [issue](https://github.com/pcko1/etherscan-python/issues) as a feature request and I will do my best to add it. 
+If you think that a newly-added method is missing, kindly open an [issue](https://github.com/pcko1/etherscan-python/issues) as a feature request and I will do my best to add it. 
 
 ## Installation
 
