@@ -162,7 +162,7 @@ eth.get_eth_balance(address="0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a")
 
 ## Examples
 
-Examples (arguments and results) for all methods may be found as JSON files [here](https://github.com/pcko1/etherscan-python/tree/master/logs).  For example, if you want to use the method `get_block_number_by_timestamp` , you can find the supported arguments and the format of its output in its respective [JSON file](logs/get_block_number_by_timestamp.json):
+Examples (arguments and results) for all methods may be found as JSON files [here](https://github.com/pcko1/etherscan-python/tree/master/logs).  For example, if you want to use the method `get_block_number_by_timestamp`, you can find the supported arguments and the format of its output in its respective [JSON file](logs/get_block_number_by_timestamp.json):
 
 ``` json
 {
