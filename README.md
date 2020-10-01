@@ -6,6 +6,7 @@ A minimal, yet complete, python API for [etherscan.io](etherscan.io).
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
+[![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
 ___
 
