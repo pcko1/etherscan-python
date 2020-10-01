@@ -3,9 +3,9 @@ from setuptools import setup
 setup(
     name="etherscan-python",
     version="1.0.0",
-    description="",
-    url="",
-    author="Panagiotis Kotsias",
+    description="A minimal, yet complete, python API for etherscan.io.",
+    url="https://github.com/pcko1/etherscan-python",
+    author="Panagiotis-Christos Kotsias",
     author_email="kotsias.pan@gmail.com",
     license="MIT",
     packages=["etherscan"],
