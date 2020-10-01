@@ -105,6 +105,8 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
+If you think that a newly-added method is missing, also open an [issue](https://github.com/pcko1/etherscan-python/issues) as a feature request and I will do my best to add it. 
+
 ## Installation
 
 Before proceeding, you should register an account on [etherscan.io](etherscan.io) and generate a personal API key to use. 
@@ -185,7 +187,7 @@ eth.get_block_number_by_timestamp(timestamp="1578638524", closest="before")
 
 ## Issues
 
-For problems regarding installing or using the package please open an [issue](https://github.com/pcko1/etherscan-python/issues). If you think that a newly-added method is missing, also open an issue as a feature request and I will do my best to add it. Kindly avoid disclosing potentially sensitive information such as your API keys or your wallet addresses.
+For problems regarding installing or using the package please open an [issue](https://github.com/pcko1/etherscan-python/issues). Kindly avoid disclosing potentially sensitive information such as your API keys or your wallet addresses.
 
 ___
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
