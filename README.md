@@ -178,7 +178,7 @@ Examples (arguments and results) for all methods may be found as JSON files [her
 }
 ```
 
-where `kwargs` refer to the required arguments and `res` refers to the expected result if you were to run:
+where `kwargs` refer to the required named arguments and `res` refers to the expected result if you were to run:
 
 ``` python
 eth.get_block_number_by_timestamp(timestamp="1578638524", closest="before")
