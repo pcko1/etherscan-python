@@ -5,21 +5,105 @@ A minimal, yet complete, python API for [etherscan.io](etherscan.io).
 [![Build Status](https://travis-ci.com/pcko1/etherscan-python.svg?branch=master)](https://travis-ci.com/pcko1/etherscan-python) 
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
-
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 
 ___
 
 All of the *free* GET endpoints from the following modules are provided:
 
-* [Accounts](https://etherscan.io/apis#accounts)
-* [Contracts](https://etherscan.io/apis#contracts)
-* [Transactions](https://etherscan.io/apis#transactions)
-* [Blocks](https://etherscan.io/apis#blocks)
-* [GETH/Parity Proxy](https://etherscan.io/apis#proxy)
-* [Tokens](https://etherscan.io/apis#tokens)
-* [Gas Tracker](https://etherscan.io/apis#gastracker)
-* [Stats](https://etherscan.io/apis#stats)
+
+<details><summary><a href="https://etherscan.io/apis#accounts">Accounts</a></summary>
+<p>
+
+* `get_eth_balance`
+* `get_eth_balance_multiple`
+* `get_normal_txs_by_address`
+* `get_normal_txs_by_address_paginated`
+* `get_internal_txs_by_address`
+* `get_internal_txs_by_address_paginated`
+* `get_internal_txs_by_txhash`
+* `get_internal_txs_by_block_range_paginated`
+* `get_erc20_token_transfer_events_by_address`
+* `get_erc20_token_transfer_events_by_contract_address_paginated`
+* `get_erc20_token_transfer_events_by_address_and_contract_paginated`
+* `get_erc721_token_transfer_events_by_address`
+* `get_erc721_token_transfer_events_by_contract_address_paginated`
+* `get_erc721_token_transfer_events_by_address_and_contract_paginated`
+* `get_mined_blocks_by_address`
+* `get_mined_blocks_by_address_paginated`
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#contracts">Contracts</a></summary>
+<p>
+  
+* `get_contract_abi`
+* `get_contract_source_code`
+
+</details>
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#transactions">Transactions</a></summary>
+<p>
+  
+* `get_contract_execution_status`
+* `get_tx_receipt_status`
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#blocks">Blocks</a></summary>
+<p>
+  
+* `get_block_reward_by_block_number`
+* `get_est_block_countdown_time_by_block_number`
+* `get_block_number_by_timestamp`
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#proxy">GETH/Parity Proxy</a></summary>
+<p>
+
+* `get_proxy_block_number`
+* `get_proxy_block_by_number`
+* `get_proxy_uncle_by_block_number_and_index`
+* `get_proxy_block_transaction_count_by_number`
+* `get_proxy_transaction_by_hash`
+* `get_proxy_transaction_by_block_number_and_index`
+* `get_proxy_transaction_count`
+* `get_proxy_transaction_receipt`
+* `get_proxy_call`
+* `get_proxy_code_at`
+* `get_proxy_storage_position_at`
+* `get_proxy_gas_price`
+* `get_proxy_est_gas`
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#tokens">Tokens</a></summary>
+<p>
+  
+* `get_total_supply_by_contract_address`
+* `get_acc_balance_by_token_and_contract_address`
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#gastracker">Gas Tracker</a></summary>
+<p>
+  
+* `get_est_confirmation_time`
+* `get_gas_oracle`
+
+</details>
+
+<details><summary><a href="https://etherscan.io/apis#stats">Stats</a></summary>
+<p>
+  
+* `get_total_eth_supply`
+* `get_eth_last_price`
+* `get_eth_nodes_size`
+
+</details>
 
 ## Installation
 
@@ -55,7 +139,7 @@ This will regenerate the logs under `logs/` with the most recent results and the
 
 ## Usage
 
-In `python` , create a client with your personal etherscan.io API key:
+In `python`, create a client with your personal etherscan.io API key:
 
 ``` python
 from etherscan import Etherscan
