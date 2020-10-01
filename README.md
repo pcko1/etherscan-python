@@ -186,7 +186,7 @@ eth.get_block_number_by_timestamp(timestamp="1578638524", closest="before")
 > '9251482'
 ```
 
-**Disclaimer**: Those examples blindly use the arguments originally showcased [here](https://api.etherscan.io/apis) and the selected wallets/contracts do not reflect any personal views. You should refer to the same source for additional information regarding specific argument values.
+**Disclaimer**: Those examples blindly use the arguments originally showcased [here](https://api.etherscan.io/apis) and the selected wallets/contracts do not reflect any personal preference. You should refer to the same source for additional information regarding specific argument values.
 
 ## Issues
 
