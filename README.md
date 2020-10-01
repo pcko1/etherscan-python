@@ -13,7 +13,7 @@ ___
 All of the *free* GET endpoints from the following modules are provided:
 
 
-<details><summary><a href="https://etherscan.io/apis#accounts">Accounts</a></summary>
+<details><summary>Accounts <a href="https://etherscan.io/apis#accounts">(source)</a></summary>
 <p>
 
 * `get_eth_balance`
@@ -35,7 +35,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#contracts">Contracts</a></summary>
+<details><summary>Contracts <a href="https://etherscan.io/apis#contracts">(source)</a></summary>
 <p>
   
 * `get_contract_abi`
@@ -45,7 +45,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#transactions">Transactions</a></summary>
+<details><summary>Transactions <a href="https://etherscan.io/apis#transactions">(source)</a></summary>
 <p>
   
 * `get_contract_execution_status`
@@ -53,7 +53,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#blocks">Blocks</a></summary>
+<details><summary>Blocks <a href="https://etherscan.io/apis#blocks">(source)</a></summary>
 <p>
   
 * `get_block_reward_by_block_number`
@@ -62,7 +62,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#proxy">GETH/Parity Proxy</a></summary>
+<details><summary>GETH/Parity Proxy <a href="https://etherscan.io/apis#proxy">(source)</a></summary>
 <p>
 
 * `get_proxy_block_number`
@@ -81,7 +81,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#tokens">Tokens</a></summary>
+<details><summary>Tokens <a href="https://etherscan.io/apis#tokens">(source)</a></summary>
 <p>
   
 * `get_total_supply_by_contract_address`
@@ -89,7 +89,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#gastracker">Gas Tracker</a></summary>
+<details><summary>Gas Tracker <a href="https://etherscan.io/apis#gastracker">(source)</a></summary>
 <p>
   
 * `get_est_confirmation_time`
@@ -97,7 +97,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-<details><summary><a href="https://etherscan.io/apis#stats">Stats</a></summary>
+<details><summary>Stats <a href="https://etherscan.io/apis#stats">(source)</a></summary>
 <p>
   
 * `get_total_eth_supply`
