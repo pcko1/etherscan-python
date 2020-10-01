@@ -36,7 +36,7 @@ class Case(TestCase):
                         "method": fun,
                         "module": v["module"],
                         "kwargs": v["kwargs"],
-                        "timestamp": datetime.now().strftime("%Y-%m-%d-%H:%M:%S"),
+                        "log_timestamp": datetime.now().strftime("%Y-%m-%d-%H:%M:%S"),
                         "res": res,
                     }
                     dump(log, fname)
