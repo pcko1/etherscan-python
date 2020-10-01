@@ -4,7 +4,7 @@
   "kwargs": {
     "txhash": "0x15f8e5ea1079d9a0bb04a4c58ae5fe7654b5b2b4463375ff7ffb490aa0032f3a"
   },
-  "timestamp": "2020-09-30-15:39:57",
+  "log_timestamp": "2020-10-01-09:43:08",
   "res": {
     "isError": "1",
     "errDescription": "Bad jump destination"

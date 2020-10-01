@@ -2,11 +2,11 @@
   "method": "get_gas_oracle",
   "module": "gastracker",
   "kwargs": {},
-  "timestamp": "2020-09-30-15:39:26",
+  "log_timestamp": "2020-10-01-09:42:44",
   "res": {
-    "LastBlock": "10964607",
-    "SafeGasPrice": "124",
-    "ProposeGasPrice": "134",
-    "FastGasPrice": "140"
+    "LastBlock": "10969401",
+    "SafeGasPrice": "68",
+    "ProposeGasPrice": "76",
+    "FastGasPrice": "92"
   }
 }
