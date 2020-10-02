@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: etherscan-python
+Version: 1.0.0
+Summary: A minimal, yet complete, python API for etherscan.io.
+Home-page: https://github.com/pcko1/etherscan-python
+Author: Panagiotis-Christos Kotsias
+Author-email: kotsias.pan@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

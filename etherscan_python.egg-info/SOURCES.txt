@@ -1,0 +1,11 @@
+README.md
+setup.py
+etherscan/__init__.py
+etherscan/etherscan.py
+etherscan_python.egg-info/PKG-INFO
+etherscan_python.egg-info/SOURCES.txt
+etherscan_python.egg-info/dependency_links.txt
+etherscan_python.egg-info/not-zip-safe
+etherscan_python.egg-info/requires.txt
+etherscan_python.egg-info/top_level.txt
+test/test_modules.py
