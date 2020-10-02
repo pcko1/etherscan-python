@@ -2,10 +2,14 @@ import json
 from datetime import datetime
 from unittest import TestCase
 
+import requests
+
 from etherscan.etherscan import Etherscan
 
-_CONFIG_PATH = "etherscan/configs/stable.json"
-_API_KEY = "3PTZ5UHY7I9GGD74FJY6SXYS6JSVY295E5"
+CONFIG_PATH = "etherscan/configs/stable.json"
+API_KEY = requests.get(
+    "https://jsonblob.com/api/7354bb23-0505-11eb-a3b7-a921883d52ea"
+).json()["key"]
 
 
 def load(fname):
@@ -23,8 +27,8 @@ class Case(TestCase):
 
     def test_methods(self):
         print(f"\nMODULE: {self._MODULE}")
-        config = load(_CONFIG_PATH)
-        etherscan = Etherscan.from_config(_CONFIG_PATH, _API_KEY)
+        config = load(CONFIG_PATH)
+        etherscan = Etherscan.from_config(CONFIG_PATH, API_KEY)
         for fun, v in config.items():
             if not fun.startswith("_"):  # disabled if _
                 if v["module"] == self._MODULE:
