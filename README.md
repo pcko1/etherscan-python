@@ -1,13 +1,14 @@
 # etherscan-python
 
-A minimal, yet complete, python API for [etherscan.io](etherscan.io).
-
 [![Build Status](https://travis-ci.com/pcko1/etherscan-python.svg?branch=master)](https://travis-ci.com/pcko1/etherscan-python) 
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
+A minimal, yet complete, python API for [Etherscan.io](Etherscan.io). Powered by [Etherscan.io APIs](https://etherscan.io/apis).
+
+Powered by [Etherscan.io APIs](https://etherscan.io/apis).
 ___
 
 All of the *free* GET endpoints from the following modules are provided:
@@ -110,7 +111,7 @@ If you think that a newly-added method is missing, kindly open an [issue](https:
 
 ## Installation
 
-Before proceeding, you should register an account on [etherscan.io](etherscan.io) and generate a personal API key to use. 
+Before proceeding, you should register an account on [Etherscan.io](Etherscan.io) and generate a personal API key to use. 
 
 Assuming [conda](https://docs.conda.io/en/latest/miniconda.html) is already installed on your system, first create the environment:
 
@@ -142,7 +143,7 @@ This will regenerate the logs under `logs/` with the most recent results and the
 
 ## Usage
 
-In `python`, create a client with your personal etherscan.io API key:
+In `python`, create a client with your personal [Etherscan.io](Etherscan.io) API key:
 
 ``` python
 from etherscan import Etherscan
