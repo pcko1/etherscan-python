@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
-A minimal, yet complete, python API for [Etherscan.io](Etherscan.io). Powered by [Etherscan.io APIs](https://etherscan.io/apis).
+A minimal, yet complete, python API for [Etherscan.io](Etherscan.io).
 
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
 ___
