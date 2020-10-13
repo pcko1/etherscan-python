@@ -13,6 +13,11 @@
 # Sphinx
 docs
 
+# build
+build/*
+dist/*
+*egg*
+
 # keys and wallets
 etherscan/enums/keys_enum.py
 etherscan/enums/wallets_enum.py
