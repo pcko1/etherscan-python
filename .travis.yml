@@ -13,5 +13,7 @@ install:
   - conda activate etherscan-python
   - pip install .
 script:
-  - bash run_tests.sh
-  - bash <(curl -s https://codecov.io/bash)
+  - echo SECRET
+  - echo $secrets.EMPTY_SECRET
+  #- bash run_tests.sh
+  #- bash <(curl -s https://codecov.io/bash)
