@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+import os
 from unittest import TestCase
 
 import requests
@@ -7,9 +8,7 @@ import requests
 from etherscan.etherscan import Etherscan
 
 CONFIG_PATH = "etherscan/configs/stable.json"
-API_KEY = requests.get(
-    "https://jsonblob.com/api/7354bb23-0505-11eb-a3b7-a921883d52ea"
-).json()["key"]
+API_KEY = os.environ["API_KEY"] # Encrypted env var by Travis
 
 
 def load(fname):
