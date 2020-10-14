@@ -13,9 +13,8 @@ install:
 - conda activate etherscan-python
 - pip install .
 script:
-- python .temp/evince_var.py
-# - bash run_tests.sh
-# - bash <(curl -s https://codecov.io/bash)
+- bash run_tests.sh
+- bash <(curl -s https://codecov.io/bash)
 env:
   global:
     secure: Rh7BwB//DOAr/QqqZNNi6rDOFqw2CAhGmDX/7np5M0/ulyZDbVb+dQnPjB5dZAD3sH818Aw48FG6wODzXQ2p93/k8DQeI+1dSEClR2zeu8cQz/dAxEr8yv+t7ufQId5IsexHRyv7WEfLoVI8bncD+X/eN6GMMbga103FTRpqwGffWvRw9dRycHmUt6W3ERsCXPk5gO8Cwd/lf/4HnrvjGN7POr9iSq8p9EHS1av5gNM1dzZSWmwevQo4T4NWt7kO56WAPTTQYPCnvjGGzTTirGzzHs3sF4XT3yATRNdlGJD8cfhbNhabj+XqVuDiWeLZRrIRp4erX+CSblrVyvdCVGFGQdg0nIUWMD6LF608KeXzOSG6lp3S5vegGeGflkCGYy5gl7Z6L5uqYpXLMFmZ8m8rEK1jX+t2PqN9a1jDx7Ta4WEOziP3RBCCMqsu9/ZpsOvcE/zcm1F+I9Y6k70Ek/t1Kj8aW7M65WtH7OUzLAylneWVg3NL74tPkLgy5E6k4/ojFV0l++DA2zQA1pUSbXwOhpq2Nsk7yBUQLh02u3fkLcZqa1EceWhj6oDYSjEWbKYtKXkx5O/HWJxiRe2Wpae+VAXp6Z79F2zJzrGGmkWrakjHylHTT6IiH6XsbEeZHQe796zXoI01K1eCaf76VNIbFrCmOa5RMaaKCvxB4J8=
