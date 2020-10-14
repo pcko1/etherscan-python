@@ -1,2 +1,2 @@
 import os
-print(os.environ["API_KEY"])
+print(os.environ["API_KEY"][0])
