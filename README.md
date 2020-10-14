@@ -111,7 +111,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 ## Installation
 
-Before proceeding, you should register an account on [Etherscan.io](Etherscan.io) and generate a personal API key to use. 
+Before proceeding, you should register an account on [Etherscan.io](Etherscan.io) and [generate a personal API key](https://etherscan.io/myapikey) to use. 
 
 Assuming [conda](https://docs.conda.io/en/latest/miniconda.html) is already installed on your system, first create the environment:
 
