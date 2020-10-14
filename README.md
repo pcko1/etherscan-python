@@ -107,7 +107,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
-If you think that a newly-added method is missing, kindly open an [issue](https://github.com/pcko1/etherscan-python/issues) as a feature request and I will do my best to add it. 
+*If you think that a newly-added method is missing, kindly open an [issue](https://github.com/pcko1/etherscan-python/issues) as a feature request and I will do my best to add it.*
 
 ## Installation
 
@@ -131,12 +131,12 @@ Then, install the package:
 pip install .
 ```
 
-## Run unittests
+## Run unittests (bash)
 
-Test that everything looks OK on your end before proceeding:
+In `bash`, test that everything looks OK on your end using your `API_KEY` (without quotation marks) before proceeding:
 
 ``` bash
-coverage run -m unittest discover && coverage report -m
+bash run_tests.sh YOUR_API_KEY
 ````
 
 This will regenerate the logs under `logs/` with the most recent results and the timestamp of the execution.
@@ -148,7 +148,7 @@ In `python`, create a client with your personal [Etherscan.io](Etherscan.io) API
 ``` python
 from etherscan import Etherscan
 
-api_key = YOUR_API_KEY
+api_key = YOUR_API_KEY # use quotation marks because it is a Python string
 config_path = "etherscan/configs/stable.json"
 
 eth = Etherscan.from_config(config_path, api_key)
