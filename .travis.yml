@@ -13,7 +13,7 @@ install:
 - conda activate etherscan-python
 - pip install .
 script:
-- echo $API_KEY
+- python .temp/evince_var.py
 # - bash run_tests.sh
 # - bash <(curl -s https://codecov.io/bash)
 env:
