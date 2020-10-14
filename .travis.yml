@@ -13,7 +13,7 @@ install:
 - conda activate etherscan-python
 - pip install .
 script:
-- bash run_tests.sh
+- coverage run -m unittest discover && coverage report -m
 - bash <(curl -s https://codecov.io/bash)
 env:
   global:
