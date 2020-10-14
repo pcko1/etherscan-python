@@ -7,8 +7,8 @@ import requests
 
 from etherscan.etherscan import Etherscan
 
-CONFIG_PATH = "etherscan/configs/stable.json"
-API_KEY = os.environ["API_KEY"] # Encrypted env var by Travis
+CONFIG_PATH = "configs/stable.json"
+API_KEY = os.environ["API_KEY"]  # Encrypted env var by Travis
 
 
 def load(fname):
