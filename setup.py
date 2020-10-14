@@ -16,5 +16,6 @@ setup(
         "configs",
     ],
     install_requires=["requests", "coverage"],
+    package_data={"configs": ["*"]},
     zip_safe=False,
 )
