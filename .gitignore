@@ -13,9 +13,7 @@
 # Sphinx
 docs
 
-# build
-build/*
-dist/*
+# eggs
 *egg*
 
 # keys and wallets
