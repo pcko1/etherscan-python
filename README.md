@@ -199,5 +199,23 @@ eth.get_block_number_by_timestamp(timestamp="1578638524", closest="before")
 
 For problems regarding installing or using the package please open an [issue](https://github.com/pcko1/etherscan-python/issues). Kindly avoid disclosing potentially sensitive information such as your API keys or your wallet addresses.
 
+## Cite
+
+Kotsias, P. C., Etherscan-python; a minimal Python API for Etherscan.io. *https://github.com/pcko1/etherscan-python* (2020). doi:10.5281/zenodo.4088586
+
+or in ```bibtex```:
+
+```bibtex
+@misc{Kotsias2020,
+  author = {Kotsias, P.C.},
+  title = {Etherscan-python; a minimal Python API for Etherscan.io},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {https://github.com/pcko1/etherscan-python},
+  doi = {10.5281/zenodo.4088586}
+}
+```
+
 ___
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
