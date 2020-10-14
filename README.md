@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
-A minimal, yet complete, python API for [Etherscan.io](Etherscan.io).
+A minimal, yet complete, python API for [Etherscan.io](Etherscan.io). Available on [PyPI](https://pypi.org/project/etherscan-python/).
 
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
 ___
@@ -129,6 +129,12 @@ Then, install the package:
 
 ``` bash
 pip install .
+```
+
+Alternatively, you can install it from [PyPI](https://pypi.org/project/etherscan-python/):
+
+```bash
+pip install etherscan-python
 ```
 
 ## Run unittests (bash)
