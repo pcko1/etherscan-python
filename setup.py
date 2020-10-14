@@ -8,7 +8,14 @@ setup(
     author="Panagiotis-Christos Kotsias",
     author_email="kotsias.pan@gmail.com",
     license="MIT",
-    packages=["etherscan"],
+    packages=[
+        "etherscan",
+        "etherscan.enums",
+        "etherscan.modules",
+        "etherscan.utils",
+        "configs",
+    ],
+    package_data={"configs": ["*"]},
     install_requires=["requests", "coverage"],
     zip_safe=False,
 )
