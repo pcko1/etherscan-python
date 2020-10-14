@@ -139,7 +139,7 @@ pip install etherscan-python
 
 ## Run unittests (bash)
 
-In `bash`, test that everything looks OK on your end using your `API_KEY` (without quotation marks) before proceeding:
+In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (without quotation marks) before proceeding:
 
 ``` bash
 bash run_tests.sh YOUR_API_KEY
