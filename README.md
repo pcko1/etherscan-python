@@ -155,7 +155,7 @@ In `python`, create a client with your personal [Etherscan.io](Etherscan.io) API
 from etherscan import Etherscan
 
 api_key = YOUR_API_KEY # use quotation marks because it is a Python string
-config_path = "etherscan/configs/stable.json"
+config_path = "configs/stable.json"
 
 eth = Etherscan.from_config(config_path, api_key)
 ```
