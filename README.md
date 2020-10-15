@@ -201,14 +201,14 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-*Kotsias, P. C., Etherscan-python; a minimal Python API for Etherscan.io. https://github.com/pcko1/etherscan-python (2020). doi:10.5281/zenodo.4088586*
+Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/etherscan-python (2020)*. doi:10.5281/zenodo.4088586
 
 or in ```bibtex```:
 
 ```bibtex
 @misc{Kotsias2020,
   author = {Kotsias, P.C.},
-  title = {Etherscan-python; a minimal Python API for Etherscan.io},
+  title = {A Python API for Etherscan.io},
   year = {2020},
   publisher = {GitHub},
   journal = {GitHub repository},
@@ -216,6 +216,8 @@ or in ```bibtex```:
   doi = {10.5281/zenodo.4088586}
 }
 ```
+
+Also kindly leave a :star: if you found this package useful.
 
 ___
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
