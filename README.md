@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
-A minimal, yet complete, python API for [Etherscan.io](Etherscan.io). Available on [PyPI](https://pypi.org/project/etherscan-python/).
+A minimal, yet complete, python API for [Etherscan.io](https://etherscan.io/). Available on [PyPI](https://pypi.org/project/etherscan-python/).
 
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
 ___
@@ -111,7 +111,7 @@ All of the *free* GET endpoints from the following modules are provided:
 
 ## Installation
 
-Before proceeding, you should register an account on [Etherscan.io](Etherscan.io) and [generate a personal API key](https://etherscan.io/myapikey) to use. 
+Before proceeding, you should register an account on [Etherscan.io](https://etherscan.io/) and [generate a personal API key](https://etherscan.io/myapikey) to use. 
 
 Assuming [conda](https://docs.conda.io/en/latest/miniconda.html) is already installed on your system, first create the environment:
 
@@ -149,7 +149,7 @@ This will regenerate the logs under `logs/` with the most recent results and the
 
 ## Usage
 
-In `python`, create a client with your personal [Etherscan.io](Etherscan.io) API key:
+In `python`, create a client with your personal [Etherscan.io](https://etherscan.io/) API key:
 
 ``` python
 from etherscan import Etherscan
