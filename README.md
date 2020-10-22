@@ -11,6 +11,9 @@ A minimal, yet complete, python API for [Etherscan.io](https://etherscan.io/). A
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
 ___
 
+
+## Endpoints
+
 All of the *free* GET endpoints from the following modules are provided:
 
 
@@ -137,7 +140,7 @@ Alternatively, you can install it from [PyPI](https://pypi.org/project/etherscan
 pip install etherscan-python
 ```
 
-## Run unittests (bash)
+## Unit tests
 
 In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (without quotation marks) before proceeding:
 
