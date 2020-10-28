@@ -179,6 +179,8 @@ bash run_tests.sh YOUR_API_KEY
 
 This will regenerate the logs under `logs/` with the most recent results and the timestamp of the execution.
 
+The tests also include the PRO endpoints so if your key is not PRO, the correspondings tests are expected to fail.
+
 ## Usage
 
 In `python`, create a client with your personal [Etherscan.io](https://etherscan.io/) API key:
