@@ -1,0 +1,19 @@
+{
+  "get_proxy_block_number": {
+    "module": "proxy",
+    "kwargs": {}
+  },
+  "get_proxy_block_by_number": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x10d4f"
+    }
+  },
+  "get_proxy_uncle_by_block_number_and_index": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x210A9B",
+      "index": "0x0"
+    }
+  }
+}
