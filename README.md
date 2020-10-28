@@ -4,8 +4,9 @@
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6db2e36886ee46f58720c6131ef58dd6)](https://app.codacy.com/gh/pcko1/etherscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/etherscan-python&utm_campaign=Badge_Grade)
 [![PyPI](https://badge.fury.io/py/etherscan-python.svg)](https://badge.fury.io/py/etherscan-python)
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
+
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
 
