@@ -5,7 +5,7 @@ from unittest import TestCase
 
 from etherscan.etherscan import Etherscan
 
-CONFIG_PATH = "configs/standard.json"
+CONFIG_PATH = "configs/stable.json"
 API_KEY = os.environ["API_KEY"]  # Encrypted env var by Travis
 
 
@@ -57,6 +57,10 @@ class TestContracts(Case):
 
 class TestGasTracker(Case):
     _MODULE = "gastracker"
+
+
+class TestPro(Case):
+    _MODULE = "pro"
 
 
 class TestProxy(Case):

@@ -7,350 +7,385 @@ from etherscan.enums.modules_enum import ModulesEnum as modules
 from etherscan.enums.tags_enum import TagsEnum as tags
 
 
-class Accounts:
+class Pro:
     @staticmethod
-    def get_eth_balance(address: str) -> str:
+    def get_hist_eth_balance_for_address_by_block_no(
+        address: str, block_no: int
+    ) -> str:
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
-            f"{actions.BALANCE}"
+            f"{actions.BALANCE_HISTORY}"
             f"{fields.ADDRESS}"
             f"{address}"
-            f"{fields.TAG}"
-            f"{tags.LATEST}"
+            f"{fields.BLOCKNO}"
+            f"{block_no}"
         )
         return url
-        # r = requests.get(url)
-        # return conversions.to_ticker_unit(parser.get_result(r))
 
     @staticmethod
-    def get_eth_balance_multiple(addresses: List[str]) -> str:
-        # NOTE: Max 20 wallets at a time
-        address_list = reduce(lambda w1, w2: str(w1) + "," + str(w2), addresses)
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.BALANCE_MULTI}"
-            f"{fields.ADDRESS}"
-            f"{address_list}"
-            f"{fields.TAG}"
-            f"{tags.LATEST}"
-        )
-        return url
-        # r = requests.get(url)
-        # return [conversions.to_ticker_unit(r["balance"]) for r in parser.get_result(r)]
-
-    @staticmethod
-    def get_normal_txs_by_address(
-        address: str,
-        startblock: int,
-        endblock: int,
+    def get_daily_average_block_size(
+        start_date: int,
+        end_date: int,
         sort: str,
     ) -> str:
-        # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TXLIST}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
+            f"{actions.DAILY_AVG_BLOCK_SIZE}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
             f"{fields.SORT}"
             f"{sort}"
         )
         return url
 
     @staticmethod
-    def get_normal_txs_by_address_paginated(
-        address: str,
-        page: int,
-        offset: int,
-        startblock: int,
-        endblock: int,
+    def get_daily_block_count_and_rewards(
+        start_date: int,
+        end_date: int,
         sort: str,
     ) -> str:
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TXLIST}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
-            f"{fields.SORT}"
-            f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
-        )
-        return url
-
-    @staticmethod
-    def get_internal_txs_by_address(
-        address: str,
-        startblock: int,
-        endblock: int,
-        sort: str,
-    ) -> str:
-        # NOTE: Returns the last 10k events
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.TXLIST_INTERNAL}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
+            f"{actions.DAILY_BLK_COUNT}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
             f"{fields.SORT}"
             f"{sort}"
         )
         return url
 
     @staticmethod
-    def get_internal_txs_by_address_paginated(
-        address: str,
-        page: int,
-        offset: int,
-        startblock: int,
-        endblock: int,
+    def get_daily_block_rewards(
+        start_date: int,
+        end_date: int,
         sort: str,
     ) -> str:
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TXLIST_INTERNAL}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
-            f"{fields.SORT}"
-            f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
-        )
-        return url
-
-    @staticmethod
-    def get_internal_txs_by_txhash(txhash: str) -> str:
-        # NOTE: Returns the last 10k events
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.TXLIST_INTERNAL}"
-            f"{fields.TXHASH}"
-            f"{txhash}"
-        )
-        return url
-
-    @staticmethod
-    def get_internal_txs_by_block_range_paginated(
-        startblock: int,
-        endblock: int,
-        page: int,
-        offset: int,
-        sort: str,
-    ) -> str:
-        # NOTE: Returns the last 10k events
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.TXLIST_INTERNAL}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
-            f"{fields.SORT}"
-            f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
-        )
-        return url
-
-    @staticmethod
-    def get_erc20_token_transfer_events_by_address(
-        address: str,
-        startblock: int,
-        endblock: int,
-        sort: str,
-    ) -> str:
-        # NOTE: Returns the last 10k events
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.TOKENTX}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
+            f"{actions.DAILY_BLOCK_REWARDS}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
             f"{fields.SORT}"
             f"{sort}"
         )
         return url
 
     @staticmethod
-    def get_erc20_token_transfer_events_by_contract_address_paginated(
-        contract_address: str, page: int, offset: int, sort: str
+    def get_daily_average_block_time(
+        start_date: int,
+        end_date: int,
+        sort: str,
     ) -> str:
-
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TOKENTX}"
+            f"{actions.DAILY_AVG_BLOCK_TIME}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_uncle_block_count_and_rewards(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.DAILY_UNCLE_BLK_COUNT}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_hist_erc20_token_total_supply_by_contract_address_and_block_no(
+        contract_address: str, block_no: int
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.TOKEN_SUPPLY_HISTORY}"
             f"{fields.CONTRACT_ADDRESS}"
             f"{contract_address}"
-            f"{fields.SORT}"
-            f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
+            f"{fields.BLOCKNO}"
+            f"{block_no}"
         )
         return url
 
     @staticmethod
-    def get_erc20_token_transfer_events_by_address_and_contract_paginated(
-        contract_address: str, address: str, page: int, offset: int, sort: str
+    def get_hist_erc20_token_account_balance_for_token_contract_address_by_block_no(
+        contract_address: str, address: str, block_no: int
     ) -> str:
-
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
-            f"{actions.TOKENTX}"
+            f"{actions.TOKEN_BALANCE_HISTORY}"
             f"{fields.CONTRACT_ADDRESS}"
             f"{contract_address}"
             f"{fields.ADDRESS}"
             f"{address}"
-            f"{fields.SORT}"
-            f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
+            f"{fields.BLOCKNO}"
+            f"{block_no}"
         )
         return url
 
     @staticmethod
-    def get_erc721_token_transfer_events_by_address(
-        address: str,
-        startblock: int,
-        endblock: int,
+    def get_token_info_by_contract_address(contract_address: str) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.TOKEN}"
+            f"{fields.ACTION}"
+            f"{actions.TOKEN_INFO}"
+            f"{fields.CONTRACT_ADDRESS}"
+            f"{contract_address}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_average_gas_limit(
+        start_date: int,
+        end_date: int,
         sort: str,
     ) -> str:
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TOKENNFTTX}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.START_BLOCK}"
-            f"{str(startblock)}"
-            f"{fields.END_BLOCK}"
-            f"{str(endblock)}"
+            f"{actions.DAILY_AVG_GAS_LIMIT}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
             f"{fields.SORT}"
             f"{sort}"
         )
         return url
 
     @staticmethod
-    def get_erc721_token_transfer_events_by_contract_address_paginated(
-        contract_address: str, page: int, offset: int, sort: str
+    def get_eth_daily_total_gas_used(
+        start_date: int,
+        end_date: int,
+        sort: str,
     ) -> str:
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TOKENNFTTX}"
-            f"{fields.CONTRACT_ADDRESS}"
-            f"{contract_address}"
+            f"{actions.DAILY_GAS_USED}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
             f"{fields.SORT}"
             f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
         )
         return url
 
     @staticmethod
-    def get_erc721_token_transfer_events_by_address_and_contract_paginated(
-        contract_address: str, address: str, page: int, offset: int, sort: str
+    def get_eth_daily_avg_gas_price(
+        start_date: int,
+        end_date: int,
+        sort: str,
     ) -> str:
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.TOKENNFTTX}"
-            f"{fields.CONTRACT_ADDRESS}"
-            f"{contract_address}"
-            f"{fields.ADDRESS}"
-            f"{address}"
+            f"{actions.DAILY_AVG_GAS_PRICE}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
             f"{fields.SORT}"
             f"{sort}"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
         )
         return url
 
     @staticmethod
-    def get_mined_blocks_by_address(address: str) -> str:
-        url = (
-            f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
-            f"{fields.ACTION}"
-            f"{actions.GET_MINED_BLOCKS}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.BLOCK_TYPE}"
-            f"blocks"
-        )
-        return url
-
-    @staticmethod
-    def get_mined_blocks_by_address_paginated(
-        address: str, page: int, offset: int
+    def get_eth_daily_network_tx_fee(
+        start_date: int,
+        end_date: int,
+        sort: str,
     ) -> str:
         url = (
             f"{fields.MODULE}"
-            f"{modules.ACCOUNT}"
+            f"{modules.STATS}"
             f"{fields.ACTION}"
-            f"{actions.GET_MINED_BLOCKS}"
-            f"{fields.ADDRESS}"
-            f"{address}"
-            f"{fields.BLOCK_TYPE}"
-            f"blocks"
-            f"{fields.PAGE}"
-            f"{str(page)}"
-            f"{fields.OFFSET}"
-            f"{str(offset)}"
+            f"{actions.DAILY_TXN_FEE}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_new_address_count(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.DAILY_NEW_ADDRESS}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_network_utilization(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.DAILY_NET_UTILIZATION}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_avg_network_hash_rate(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.DAILY_AVG_HASH_RATE}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_tx_count(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.DAILY_TX}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_daily_avg_network_difficulty(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.DAILY_AVG_NET_DIFFICULTY}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_eth_hist_daily_market_cap(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.ETH_DAILY_MARKET_CAP}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
+        )
+        return url
+
+    @staticmethod
+    def get_eth_hist_price(
+        start_date: int,
+        end_date: int,
+        sort: str,
+    ) -> str:
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.ETH_DAILY_PRICE}"
+            f"{fields.START_DATE}"
+            f"{str(start_date)}"
+            f"{fields.END_DATE}"
+            f"{str(end_date)}"
+            f"{fields.SORT}"
+            f"{sort}"
         )
         return url
