@@ -2,6 +2,6 @@
   "method": "get_total_eth_supply",
   "module": "stats",
   "kwargs": {},
-  "log_timestamp": "2020-10-28-12:01:56",
-  "res": "113191884936500000000000000"
+  "log_timestamp": "2020-10-28-12:35:10",
+  "res": "113192200624000000000000000"
 }

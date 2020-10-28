@@ -1,0 +1,208 @@
+{
+  "method": "get_eth_daily_average_gas_price",
+  "module": "pro",
+  "kwargs": {
+    "start_date": "2019-02-01",
+    "end_date": "2019-02-28",
+    "sort": "asc"
+  },
+  "log_timestamp": "2020-10-28-12:34:55",
+  "res": [
+    {
+      "UTCDate": "2019-02-01",
+      "unixTimeStamp": "1548979200",
+      "maxGasPrice_Wei": "60814303896257",
+      "minGasPrice_Wei": "432495",
+      "avgGasPrice_Wei": "13234562600"
+    },
+    {
+      "UTCDate": "2019-02-02",
+      "unixTimeStamp": "1549065600",
+      "maxGasPrice_Wei": "20000000000000",
+      "minGasPrice_Wei": "2352",
+      "avgGasPrice_Wei": "12000569516"
+    },
+    {
+      "UTCDate": "2019-02-03",
+      "unixTimeStamp": "1549152000",
+      "maxGasPrice_Wei": "23614285714285",
+      "minGasPrice_Wei": "269025",
+      "avgGasPrice_Wei": "11637460620"
+    },
+    {
+      "UTCDate": "2019-02-04",
+      "unixTimeStamp": "1549238400",
+      "maxGasPrice_Wei": "200000000000000",
+      "minGasPrice_Wei": "167342",
+      "avgGasPrice_Wei": "12082194503"
+    },
+    {
+      "UTCDate": "2019-02-05",
+      "unixTimeStamp": "1549324800",
+      "maxGasPrice_Wei": "83012293290087",
+      "minGasPrice_Wei": "1",
+      "avgGasPrice_Wei": "12593215644"
+    },
+    {
+      "UTCDate": "2019-02-06",
+      "unixTimeStamp": "1549411200",
+      "maxGasPrice_Wei": "3767644726505",
+      "minGasPrice_Wei": "1",
+      "avgGasPrice_Wei": "12593166346"
+    },
+    {
+      "UTCDate": "2019-02-07",
+      "unixTimeStamp": "1549497600",
+      "maxGasPrice_Wei": "420000000000000",
+      "minGasPrice_Wei": "10",
+      "avgGasPrice_Wei": "14057368181"
+    },
+    {
+      "UTCDate": "2019-02-08",
+      "unixTimeStamp": "1549584000",
+      "maxGasPrice_Wei": "55524906233331",
+      "minGasPrice_Wei": "48964",
+      "avgGasPrice_Wei": "13310836398"
+    },
+    {
+      "UTCDate": "2019-02-09",
+      "unixTimeStamp": "1549670400",
+      "maxGasPrice_Wei": "127000000000000",
+      "minGasPrice_Wei": "1",
+      "avgGasPrice_Wei": "12390959208"
+    },
+    {
+      "UTCDate": "2019-02-10",
+      "unixTimeStamp": "1549756800",
+      "maxGasPrice_Wei": "21000000000000",
+      "minGasPrice_Wei": "17504",
+      "avgGasPrice_Wei": "12847065310"
+    },
+    {
+      "UTCDate": "2019-02-11",
+      "unixTimeStamp": "1549843200",
+      "maxGasPrice_Wei": "7000000000000",
+      "minGasPrice_Wei": "9295",
+      "avgGasPrice_Wei": "13977805236"
+    },
+    {
+      "UTCDate": "2019-02-12",
+      "unixTimeStamp": "1549929600",
+      "maxGasPrice_Wei": "6379000000000",
+      "minGasPrice_Wei": "5781",
+      "avgGasPrice_Wei": "13012487105"
+    },
+    {
+      "UTCDate": "2019-02-13",
+      "unixTimeStamp": "1550016000",
+      "maxGasPrice_Wei": "34498571428571",
+      "minGasPrice_Wei": "3892",
+      "avgGasPrice_Wei": "13713241302"
+    },
+    {
+      "UTCDate": "2019-02-14",
+      "unixTimeStamp": "1550102400",
+      "maxGasPrice_Wei": "2221418863432381",
+      "minGasPrice_Wei": "46298801",
+      "avgGasPrice_Wei": "19148327564"
+    },
+    {
+      "UTCDate": "2019-02-15",
+      "unixTimeStamp": "1550188800",
+      "maxGasPrice_Wei": "33333333333333",
+      "minGasPrice_Wei": "1",
+      "avgGasPrice_Wei": "14753437258"
+    },
+    {
+      "UTCDate": "2019-02-16",
+      "unixTimeStamp": "1550275200",
+      "maxGasPrice_Wei": "11392000000000",
+      "minGasPrice_Wei": "1",
+      "avgGasPrice_Wei": "13510079150"
+    },
+    {
+      "UTCDate": "2019-02-17",
+      "unixTimeStamp": "1550361600",
+      "maxGasPrice_Wei": "10940117095785",
+      "minGasPrice_Wei": "1506",
+      "avgGasPrice_Wei": "13757940835"
+    },
+    {
+      "UTCDate": "2019-02-18",
+      "unixTimeStamp": "1550448000",
+      "maxGasPrice_Wei": "100770093884892",
+      "minGasPrice_Wei": "1097",
+      "avgGasPrice_Wei": "17094399315"
+    },
+    {
+      "UTCDate": "2019-02-19",
+      "unixTimeStamp": "1550534400",
+      "maxGasPrice_Wei": "100000000000000000",
+      "minGasPrice_Wei": "800",
+      "avgGasPrice_Wei": "373905995022"
+    },
+    {
+      "UTCDate": "2019-02-20",
+      "unixTimeStamp": "1550620800",
+      "maxGasPrice_Wei": "19000000000000",
+      "minGasPrice_Wei": "1",
+      "avgGasPrice_Wei": "16098676684"
+    },
+    {
+      "UTCDate": "2019-02-21",
+      "unixTimeStamp": "1550707200",
+      "maxGasPrice_Wei": "10000000000000",
+      "minGasPrice_Wei": "7",
+      "avgGasPrice_Wei": "15306757881"
+    },
+    {
+      "UTCDate": "2019-02-22",
+      "unixTimeStamp": "1550793600",
+      "maxGasPrice_Wei": "8571428571679",
+      "minGasPrice_Wei": "13800",
+      "avgGasPrice_Wei": "14913439608"
+    },
+    {
+      "UTCDate": "2019-02-23",
+      "unixTimeStamp": "1550880000",
+      "maxGasPrice_Wei": "21000000000000",
+      "minGasPrice_Wei": "22",
+      "avgGasPrice_Wei": "14039107293"
+    },
+    {
+      "UTCDate": "2019-02-24",
+      "unixTimeStamp": "1550966400",
+      "maxGasPrice_Wei": "210000000000000",
+      "minGasPrice_Wei": "11000000",
+      "avgGasPrice_Wei": "16251853700"
+    },
+    {
+      "UTCDate": "2019-02-25",
+      "unixTimeStamp": "1551052800",
+      "maxGasPrice_Wei": "7179842380952",
+      "minGasPrice_Wei": "50000000",
+      "avgGasPrice_Wei": "17020990610"
+    },
+    {
+      "UTCDate": "2019-02-26",
+      "unixTimeStamp": "1551139200",
+      "maxGasPrice_Wei": "60029121428571",
+      "minGasPrice_Wei": "122630",
+      "avgGasPrice_Wei": "17415861033"
+    },
+    {
+      "UTCDate": "2019-02-27",
+      "unixTimeStamp": "1551225600",
+      "maxGasPrice_Wei": "42000000000000",
+      "minGasPrice_Wei": "1000000",
+      "avgGasPrice_Wei": "16334617513"
+    },
+    {
+      "UTCDate": "2019-02-28",
+      "unixTimeStamp": "1551312000",
+      "maxGasPrice_Wei": "237222222222257",
+      "minGasPrice_Wei": "100000000",
+      "avgGasPrice_Wei": "18834674068"
+    }
+  ]
+}

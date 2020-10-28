@@ -1,152 +1,152 @@
 {
-  "method": "get_daily_average_block_size",
+  "method": "get_daily_average_network_difficulty",
   "module": "pro",
   "kwargs": {
     "start_date": "2019-02-01",
     "end_date": "2019-02-28",
     "sort": "asc"
   },
-  "log_timestamp": "2020-10-28-12:34:48",
+  "log_timestamp": "2020-10-28-12:34:59",
   "res": [
     {
       "UTCDate": "2019-02-01",
       "unixTimeStamp": "1548979200",
-      "blockSize_bytes": 20373
+      "networkDifficulty": "2,408.028"
     },
     {
       "UTCDate": "2019-02-02",
       "unixTimeStamp": "1549065600",
-      "blockSize_bytes": 17499
+      "networkDifficulty": "2,358.910"
     },
     {
       "UTCDate": "2019-02-03",
       "unixTimeStamp": "1549152000",
-      "blockSize_bytes": 16597
+      "networkDifficulty": "2,354.610"
     },
     {
       "UTCDate": "2019-02-04",
       "unixTimeStamp": "1549238400",
-      "blockSize_bytes": 16326
+      "networkDifficulty": "2,361.903"
     },
     {
       "UTCDate": "2019-02-05",
       "unixTimeStamp": "1549324800",
-      "blockSize_bytes": 16601
+      "networkDifficulty": "2,363.999"
     },
     {
       "UTCDate": "2019-02-06",
       "unixTimeStamp": "1549411200",
-      "blockSize_bytes": 17023
+      "networkDifficulty": "2,348.840"
     },
     {
       "UTCDate": "2019-02-07",
       "unixTimeStamp": "1549497600",
-      "blockSize_bytes": 17432
+      "networkDifficulty": "2,334.071"
     },
     {
       "UTCDate": "2019-02-08",
       "unixTimeStamp": "1549584000",
-      "blockSize_bytes": 18982
+      "networkDifficulty": "2,371.717"
     },
     {
       "UTCDate": "2019-02-09",
       "unixTimeStamp": "1549670400",
-      "blockSize_bytes": 17138
+      "networkDifficulty": "2,370.090"
     },
     {
       "UTCDate": "2019-02-10",
       "unixTimeStamp": "1549756800",
-      "blockSize_bytes": 18598
+      "networkDifficulty": "2,799.616"
     },
     {
       "UTCDate": "2019-02-11",
       "unixTimeStamp": "1549843200",
-      "blockSize_bytes": 20700
+      "networkDifficulty": "2,790.454"
     },
     {
       "UTCDate": "2019-02-12",
       "unixTimeStamp": "1549929600",
-      "blockSize_bytes": 20824
+      "networkDifficulty": "2,845.497"
     },
     {
       "UTCDate": "2019-02-13",
       "unixTimeStamp": "1550016000",
-      "blockSize_bytes": 23368
+      "networkDifficulty": "2,813.683"
     },
     {
       "UTCDate": "2019-02-14",
       "unixTimeStamp": "1550102400",
-      "blockSize_bytes": 23305
+      "networkDifficulty": "2,763.886"
     },
     {
       "UTCDate": "2019-02-15",
       "unixTimeStamp": "1550188800",
-      "blockSize_bytes": 22751
+      "networkDifficulty": "2,758.556"
     },
     {
       "UTCDate": "2019-02-16",
       "unixTimeStamp": "1550275200",
-      "blockSize_bytes": 21513
+      "networkDifficulty": "2,791.493"
     },
     {
       "UTCDate": "2019-02-17",
       "unixTimeStamp": "1550361600",
-      "blockSize_bytes": 22199
+      "networkDifficulty": "2,787.184"
     },
     {
       "UTCDate": "2019-02-18",
       "unixTimeStamp": "1550448000",
-      "blockSize_bytes": 24106
+      "networkDifficulty": "2,800.544"
     },
     {
       "UTCDate": "2019-02-19",
       "unixTimeStamp": "1550534400",
-      "blockSize_bytes": 24581
+      "networkDifficulty": "2,931.316"
     },
     {
       "UTCDate": "2019-02-20",
       "unixTimeStamp": "1550620800",
-      "blockSize_bytes": 24759
+      "networkDifficulty": "2,934.330"
     },
     {
       "UTCDate": "2019-02-21",
       "unixTimeStamp": "1550707200",
-      "blockSize_bytes": 25217
+      "networkDifficulty": "2,935.973"
     },
     {
       "UTCDate": "2019-02-22",
       "unixTimeStamp": "1550793600",
-      "blockSize_bytes": 24969
+      "networkDifficulty": "2,909.985"
     },
     {
       "UTCDate": "2019-02-23",
       "unixTimeStamp": "1550880000",
-      "blockSize_bytes": 21843
+      "networkDifficulty": "3,019.639"
     },
     {
       "UTCDate": "2019-02-24",
       "unixTimeStamp": "1550966400",
-      "blockSize_bytes": 24399
+      "networkDifficulty": "3,010.990"
     },
     {
       "UTCDate": "2019-02-25",
       "unixTimeStamp": "1551052800",
-      "blockSize_bytes": 26690
+      "networkDifficulty": "2,966.100"
     },
     {
       "UTCDate": "2019-02-26",
       "unixTimeStamp": "1551139200",
-      "blockSize_bytes": 26269
+      "networkDifficulty": "2,978.234"
     },
     {
       "UTCDate": "2019-02-27",
       "unixTimeStamp": "1551225600",
-      "blockSize_bytes": 25340
+      "networkDifficulty": "2,974.809"
     },
     {
       "UTCDate": "2019-02-28",
       "unixTimeStamp": "1551312000",
-      "blockSize_bytes": 25117
+      "networkDifficulty": "2,927.453"
     }
   ]
 }
