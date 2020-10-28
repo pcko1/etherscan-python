@@ -32,7 +32,7 @@ class Case(TestCase):
                     res = getattr(etherscan, fun)(**v["kwargs"])
                     print(f"METHOD: {fun}, RTYPE: {type(res)}")
                     # Create log files (will update existing ones)
-                    fname = f"logs/{fun}.json"
+                    fname = f"logs/standard/{fun}.json"
                     log = {
                         "method": fun,
                         "module": v["module"],
