@@ -212,7 +212,7 @@ Examples (arguments and results) for all methods may be found as JSON files [her
     "timestamp": "1578638524",
     "closest": "before"
   },
-  "log_timestamp": "2020-09-30-15:39:18",
+  "log_timestamp": "2020-10-28-12:34:44",
   "res": "9251482"
 }
 ```
