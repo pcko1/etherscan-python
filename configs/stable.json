@@ -306,5 +306,161 @@
       "page": 1,
       "offset": 100
     }
+  },
+  "get_hist_eth_balance_for_address_by_block_no": {
+    "module": "pro",
+    "kwargs": {
+      "address": "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae",
+      "block_no": "8000000"
+    }
+  },
+  "get_daily_average_block_size": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_block_count_and_rewards": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_block_rewards": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_average_block_time": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_uncle_block_count_and_rewards": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_hist_erc20_token_total_supply_by_contract_address_and_block_no": {
+    "module": "pro",
+    "kwargs": {
+      "contract_address": "0x57d90b64a1a57749b0f932f1a3395792e12e7055",
+      "block_no": "8000000"
+    }
+  },
+  "get_hist_erc20_token_account_balance_for_token_contract_address_by_block_no": {
+    "module": "pro",
+    "kwargs": {
+      "contract_address": "0x57d90b64a1a57749b0f932f1a3395792e12e7055",
+      "address": "0xe04f27eb70e025b78871a2ad7eabe85e61212761",
+      "block_no": "8000000"
+    }
+  },
+  "get_token_info_by_contract_address": {
+    "module": "pro",
+    "kwargs": {
+      "contract_address": "0x0e3a2a1f2146d86a604adc220b4967a898d7fe07"
+    }
+  },
+  "get_daily_average_gas_limit": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_eth_daily_total_gas_used": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_eth_daily_avg_gas_price": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_eth_daily_network_tx_fee": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_new_address_count": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_network_utilization": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_avg_network_hash_rate": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_tx_count": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_daily_avg_network_difficulty": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_eth_hist_daily_market_cap": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
+  },
+  "get_eth_hist_price": {
+    "module": "pro",
+    "kwargs": {
+      "start_date": "2019-02-01",
+      "end_date": "2019-02-28",
+      "sort": "asc"
+    }
   }
 }
