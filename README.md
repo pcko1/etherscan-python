@@ -8,14 +8,15 @@
 
 A minimal, yet complete, python API for [Etherscan.io](https://etherscan.io/). Available on [PyPI](https://pypi.org/project/etherscan-python/).
 
+All FREE and PRO endpoints are provided.
+
 Powered by [Etherscan.io APIs](https://etherscan.io/apis).
 ___
 
 
 ## Endpoints
 
-All of the *free* GET endpoints from the following modules are provided:
-
+The following endpoints are provided:
 
 <details><summary>Accounts <a href="https://etherscan.io/apis#accounts">(source)</a></summary>
 <p>
@@ -110,11 +111,39 @@ All of the *free* GET endpoints from the following modules are provided:
 
 </details>
 
+<details><summary>Pro (PRO API key needed) <a href="https://etherscan.io/apis#APIpro">(source)</a></summary>
+<p>
+
+* `get_hist_eth_balance_for_address_by_block_no`
+* `get_daily_average_block_size`
+* `get_daily_block_count_and_rewards`
+* `get_daily_block_rewards`
+* `get_daily_average_block_time`
+* `get_daily_uncle_block_count_and_rewards`
+* `get_hist_erc20_token_total_supply_by_contract_address_and_block_no`
+* `get_hist_erc20_token_account_balance_for_token_contract_address_by_block_no`
+* `get_token_info_by_contract_address`
+* `get_daily_average_gas_limit`
+* `get_eth_daily_total_gas_used`
+* `get_eth_daily_average_gas_price`
+* `get_eth_daily_network_tx_fee`
+* `get_daily_new_address_count`
+* `get_daily_network_utilization`
+* `get_daily_average_network_hash_rate`
+* `get_daily_tx_count`
+* `get_daily_average_network_difficulty`
+* `get_eth_hist_daily_market_cap`
+* `get_eth_hist_price`
+
+</details>
+
 *If you think that a newly-added method is missing, kindly open an [issue](https://github.com/pcko1/etherscan-python/issues) as a feature request and I will do my best to add it.*
 
 ## Installation
 
 Before proceeding, you should register an account on [Etherscan.io](https://etherscan.io/) and [generate a personal API key](https://etherscan.io/myapikey) to use. 
+
+If you wish to have access to the PRO endpoints, you should obtain elevated privileges via Etherscan's subscription service.
 
 Assuming [conda](https://docs.conda.io/en/latest/miniconda.html) is already installed on your system, first create the environment:
 
@@ -173,7 +202,7 @@ eth.get_eth_balance(address="0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a")
 
 ## Examples
 
-Examples (arguments and results) for all methods may be found as JSON files [here](https://github.com/pcko1/etherscan-python/tree/master/logs).  For example, if you want to use the method `get_block_number_by_timestamp`, you can find the supported arguments and the format of its output in its respective [JSON file](logs/get_block_number_by_timestamp.json):
+Examples (arguments and results) for all methods may be found as JSON files [here](https://github.com/pcko1/etherscan-python/tree/master/logs).  For example, if you want to use the method `get_block_number_by_timestamp`, you can find the supported arguments and the format of its output in its respective [JSON file](logs/standard/get_block_number_by_timestamp.json):
 
 ``` json
 {
