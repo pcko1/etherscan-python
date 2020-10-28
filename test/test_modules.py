@@ -3,11 +3,9 @@ from datetime import datetime
 import os
 from unittest import TestCase
 
-import requests
-
 from etherscan.etherscan import Etherscan
 
-CONFIG_PATH = "configs/stable.json"
+CONFIG_PATH = "configs/standard.json"
 API_KEY = os.environ["API_KEY"]  # Encrypted env var by Travis
 
 
