@@ -1,0 +1,180 @@
+{
+  "method": "get_daily_block_count_and_rewards",
+  "module": "pro",
+  "kwargs": {
+    "start_date": "2019-02-01",
+    "end_date": "2019-02-28",
+    "sort": "asc"
+  },
+  "log_timestamp": "2020-10-28-11:55:06",
+  "res": [
+    {
+      "UTCDate": "2019-02-01",
+      "unixTimeStamp": "1548979200",
+      "blockCount": 4848,
+      "blockRewards_Eth": "14929.464690870590355682"
+    },
+    {
+      "UTCDate": "2019-02-02",
+      "unixTimeStamp": "1549065600",
+      "blockCount": 4935,
+      "blockRewards_Eth": "15120.386084685869906669"
+    },
+    {
+      "UTCDate": "2019-02-03",
+      "unixTimeStamp": "1549152000",
+      "blockCount": 4858,
+      "blockRewards_Eth": "14850.966463007827151947"
+    },
+    {
+      "UTCDate": "2019-02-04",
+      "unixTimeStamp": "1549238400",
+      "blockCount": 4938,
+      "blockRewards_Eth": "15101.71491569706715742"
+    },
+    {
+      "UTCDate": "2019-02-05",
+      "unixTimeStamp": "1549324800",
+      "blockCount": 4900,
+      "blockRewards_Eth": "14995.603770562289946328"
+    },
+    {
+      "UTCDate": "2019-02-06",
+      "unixTimeStamp": "1549411200",
+      "blockCount": 4892,
+      "blockRewards_Eth": "14981.876961099938063379"
+    },
+    {
+      "UTCDate": "2019-02-07",
+      "unixTimeStamp": "1549497600",
+      "blockCount": 4918,
+      "blockRewards_Eth": "15079.681479808971009116"
+    },
+    {
+      "UTCDate": "2019-02-08",
+      "unixTimeStamp": "1549584000",
+      "blockCount": 4923,
+      "blockRewards_Eth": "15121.508334042987710456"
+    },
+    {
+      "UTCDate": "2019-02-09",
+      "unixTimeStamp": "1549670400",
+      "blockCount": 4900,
+      "blockRewards_Eth": "15015.355879769382648583"
+    },
+    {
+      "UTCDate": "2019-02-10",
+      "unixTimeStamp": "1549756800",
+      "blockCount": 4298,
+      "blockRewards_Eth": "13185.062651616766678939"
+    },
+    {
+      "UTCDate": "2019-02-11",
+      "unixTimeStamp": "1549843200",
+      "blockCount": 4195,
+      "blockRewards_Eth": "12925.813961172266267345"
+    },
+    {
+      "UTCDate": "2019-02-12",
+      "unixTimeStamp": "1549929600",
+      "blockCount": 4273,
+      "blockRewards_Eth": "13155.096706317758054112"
+    },
+    {
+      "UTCDate": "2019-02-13",
+      "unixTimeStamp": "1550016000",
+      "blockCount": 4169,
+      "blockRewards_Eth": "12883.030882013252836379"
+    },
+    {
+      "UTCDate": "2019-02-14",
+      "unixTimeStamp": "1550102400",
+      "blockCount": 4166,
+      "blockRewards_Eth": "12914.21209556988236845"
+    },
+    {
+      "UTCDate": "2019-02-15",
+      "unixTimeStamp": "1550188800",
+      "blockCount": 4158,
+      "blockRewards_Eth": "12903.436179404100591967"
+    },
+    {
+      "UTCDate": "2019-02-16",
+      "unixTimeStamp": "1550275200",
+      "blockCount": 4224,
+      "blockRewards_Eth": "13054.272298152031351776"
+    },
+    {
+      "UTCDate": "2019-02-17",
+      "unixTimeStamp": "1550361600",
+      "blockCount": 4139,
+      "blockRewards_Eth": "12795.799520384085746798"
+    },
+    {
+      "UTCDate": "2019-02-18",
+      "unixTimeStamp": "1550448000",
+      "blockCount": 4196,
+      "blockRewards_Eth": "13104.98809480394059885"
+    },
+    {
+      "UTCDate": "2019-02-19",
+      "unixTimeStamp": "1550534400",
+      "blockCount": 4288,
+      "blockRewards_Eth": "17363.037847090383139395"
+    },
+    {
+      "UTCDate": "2019-02-20",
+      "unixTimeStamp": "1550620800",
+      "blockCount": 4242,
+      "blockRewards_Eth": "13215.503050622835283572"
+    },
+    {
+      "UTCDate": "2019-02-21",
+      "unixTimeStamp": "1550707200",
+      "blockCount": 4252,
+      "blockRewards_Eth": "13226.737597909843539379"
+    },
+    {
+      "UTCDate": "2019-02-22",
+      "unixTimeStamp": "1550793600",
+      "blockCount": 4238,
+      "blockRewards_Eth": "13160.909735177110008375"
+    },
+    {
+      "UTCDate": "2019-02-23",
+      "unixTimeStamp": "1550880000",
+      "blockCount": 4353,
+      "blockRewards_Eth": "13465.574242211673279488"
+    },
+    {
+      "UTCDate": "2019-02-24",
+      "unixTimeStamp": "1550966400",
+      "blockCount": 4254,
+      "blockRewards_Eth": "13248.66443818023833454"
+    },
+    {
+      "UTCDate": "2019-02-25",
+      "unixTimeStamp": "1551052800",
+      "blockCount": 4238,
+      "blockRewards_Eth": "13261.160638293064313163"
+    },
+    {
+      "UTCDate": "2019-02-26",
+      "unixTimeStamp": "1551139200",
+      "blockCount": 4281,
+      "blockRewards_Eth": "13392.315348273230275303"
+    },
+    {
+      "UTCDate": "2019-02-27",
+      "unixTimeStamp": "1551225600",
+      "blockCount": 4281,
+      "blockRewards_Eth": "13344.374644158920547929"
+    },
+    {
+      "UTCDate": "2019-02-28",
+      "unixTimeStamp": "1551312000",
+      "blockCount": 4366,
+      "blockRewards_Eth": "12808.485512162356907132"
+    }
+  ]
+}

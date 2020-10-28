@@ -1,0 +1,180 @@
+{
+  "method": "get_daily_uncle_block_count_and_rewards",
+  "module": "pro",
+  "kwargs": {
+    "start_date": "2019-02-01",
+    "end_date": "2019-02-28",
+    "sort": "asc"
+  },
+  "log_timestamp": "2020-10-28-11:55:09",
+  "res": [
+    {
+      "UTCDate": "2019-02-01",
+      "unixTimeStamp": "1548979200",
+      "uncleBlockCount": 287,
+      "uncleBlockRewards_Eth": "729.75"
+    },
+    {
+      "UTCDate": "2019-02-02",
+      "unixTimeStamp": "1549065600",
+      "uncleBlockCount": 304,
+      "uncleBlockRewards_Eth": "778.125"
+    },
+    {
+      "UTCDate": "2019-02-03",
+      "unixTimeStamp": "1549152000",
+      "uncleBlockCount": 248,
+      "uncleBlockRewards_Eth": "628.875"
+    },
+    {
+      "UTCDate": "2019-02-04",
+      "unixTimeStamp": "1549238400",
+      "uncleBlockCount": 222,
+      "uncleBlockRewards_Eth": "559.875"
+    },
+    {
+      "UTCDate": "2019-02-05",
+      "unixTimeStamp": "1549324800",
+      "uncleBlockCount": 275,
+      "uncleBlockRewards_Eth": "693"
+    },
+    {
+      "UTCDate": "2019-02-06",
+      "unixTimeStamp": "1549411200",
+      "uncleBlockCount": 237,
+      "uncleBlockRewards_Eth": "604.125"
+    },
+    {
+      "UTCDate": "2019-02-07",
+      "unixTimeStamp": "1549497600",
+      "uncleBlockCount": 244,
+      "uncleBlockRewards_Eth": "621.75"
+    },
+    {
+      "UTCDate": "2019-02-08",
+      "unixTimeStamp": "1549584000",
+      "uncleBlockCount": 267,
+      "uncleBlockRewards_Eth": "677.25"
+    },
+    {
+      "UTCDate": "2019-02-09",
+      "unixTimeStamp": "1549670400",
+      "uncleBlockCount": 246,
+      "uncleBlockRewards_Eth": "624"
+    },
+    {
+      "UTCDate": "2019-02-10",
+      "unixTimeStamp": "1549756800",
+      "uncleBlockCount": 181,
+      "uncleBlockRewards_Eth": "459.375"
+    },
+    {
+      "UTCDate": "2019-02-11",
+      "unixTimeStamp": "1549843200",
+      "uncleBlockCount": 209,
+      "uncleBlockRewards_Eth": "526.5"
+    },
+    {
+      "UTCDate": "2019-02-12",
+      "unixTimeStamp": "1549929600",
+      "uncleBlockCount": 207,
+      "uncleBlockRewards_Eth": "525.375"
+    },
+    {
+      "UTCDate": "2019-02-13",
+      "unixTimeStamp": "1550016000",
+      "uncleBlockCount": 208,
+      "uncleBlockRewards_Eth": "531"
+    },
+    {
+      "UTCDate": "2019-02-14",
+      "unixTimeStamp": "1550102400",
+      "uncleBlockCount": 221,
+      "uncleBlockRewards_Eth": "562.125"
+    },
+    {
+      "UTCDate": "2019-02-15",
+      "unixTimeStamp": "1550188800",
+      "uncleBlockCount": 225,
+      "uncleBlockRewards_Eth": "568.875"
+    },
+    {
+      "UTCDate": "2019-02-16",
+      "unixTimeStamp": "1550275200",
+      "uncleBlockCount": 233,
+      "uncleBlockRewards_Eth": "587.625"
+    },
+    {
+      "UTCDate": "2019-02-17",
+      "unixTimeStamp": "1550361600",
+      "uncleBlockCount": 217,
+      "uncleBlockRewards_Eth": "552"
+    },
+    {
+      "UTCDate": "2019-02-18",
+      "unixTimeStamp": "1550448000",
+      "uncleBlockCount": 271,
+      "uncleBlockRewards_Eth": "684.375"
+    },
+    {
+      "UTCDate": "2019-02-19",
+      "unixTimeStamp": "1550534400",
+      "uncleBlockCount": 253,
+      "uncleBlockRewards_Eth": "645"
+    },
+    {
+      "UTCDate": "2019-02-20",
+      "unixTimeStamp": "1550620800",
+      "uncleBlockCount": 261,
+      "uncleBlockRewards_Eth": "666.75"
+    },
+    {
+      "UTCDate": "2019-02-21",
+      "unixTimeStamp": "1550707200",
+      "uncleBlockCount": 222,
+      "uncleBlockRewards_Eth": "562.875"
+    },
+    {
+      "UTCDate": "2019-02-22",
+      "unixTimeStamp": "1550793600",
+      "uncleBlockCount": 218,
+      "uncleBlockRewards_Eth": "557.625"
+    },
+    {
+      "UTCDate": "2019-02-23",
+      "unixTimeStamp": "1550880000",
+      "uncleBlockCount": 225,
+      "uncleBlockRewards_Eth": "571.875"
+    },
+    {
+      "UTCDate": "2019-02-24",
+      "unixTimeStamp": "1550966400",
+      "uncleBlockCount": 227,
+      "uncleBlockRewards_Eth": "574.875"
+    },
+    {
+      "UTCDate": "2019-02-25",
+      "unixTimeStamp": "1551052800",
+      "uncleBlockCount": 251,
+      "uncleBlockRewards_Eth": "634.125"
+    },
+    {
+      "UTCDate": "2019-02-26",
+      "unixTimeStamp": "1551139200",
+      "uncleBlockCount": 257,
+      "uncleBlockRewards_Eth": "653.625"
+    },
+    {
+      "UTCDate": "2019-02-27",
+      "unixTimeStamp": "1551225600",
+      "uncleBlockCount": 254,
+      "uncleBlockRewards_Eth": "644.625"
+    },
+    {
+      "UTCDate": "2019-02-28",
+      "unixTimeStamp": "1551312000",
+      "uncleBlockCount": 288,
+      "uncleBlockRewards_Eth": "691.5"
+    }
+  ]
+}

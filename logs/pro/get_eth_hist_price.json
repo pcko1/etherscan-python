@@ -1,0 +1,152 @@
+{
+  "method": "get_eth_hist_price",
+  "module": "pro",
+  "kwargs": {
+    "start_date": "2019-02-01",
+    "end_date": "2019-02-28",
+    "sort": "asc"
+  },
+  "log_timestamp": "2020-10-28-11:55:19",
+  "res": [
+    {
+      "UTCDate": "2019-02-01",
+      "unixTimeStamp": "1548979200",
+      "value": "107.03"
+    },
+    {
+      "UTCDate": "2019-02-02",
+      "unixTimeStamp": "1549065600",
+      "value": "111.00"
+    },
+    {
+      "UTCDate": "2019-02-03",
+      "unixTimeStamp": "1549152000",
+      "value": "107.21"
+    },
+    {
+      "UTCDate": "2019-02-04",
+      "unixTimeStamp": "1549238400",
+      "value": "106.90"
+    },
+    {
+      "UTCDate": "2019-02-05",
+      "unixTimeStamp": "1549324800",
+      "value": "106.93"
+    },
+    {
+      "UTCDate": "2019-02-06",
+      "unixTimeStamp": "1549411200",
+      "value": "104.50"
+    },
+    {
+      "UTCDate": "2019-02-07",
+      "unixTimeStamp": "1549497600",
+      "value": "104.30"
+    },
+    {
+      "UTCDate": "2019-02-08",
+      "unixTimeStamp": "1549584000",
+      "value": "119.49"
+    },
+    {
+      "UTCDate": "2019-02-09",
+      "unixTimeStamp": "1549670400",
+      "value": "119.46"
+    },
+    {
+      "UTCDate": "2019-02-10",
+      "unixTimeStamp": "1549756800",
+      "value": "125.58"
+    },
+    {
+      "UTCDate": "2019-02-11",
+      "unixTimeStamp": "1549843200",
+      "value": "120.76"
+    },
+    {
+      "UTCDate": "2019-02-12",
+      "unixTimeStamp": "1549929600",
+      "value": "122.63"
+    },
+    {
+      "UTCDate": "2019-02-13",
+      "unixTimeStamp": "1550016000",
+      "value": "122.31"
+    },
+    {
+      "UTCDate": "2019-02-14",
+      "unixTimeStamp": "1550102400",
+      "value": "120.85"
+    },
+    {
+      "UTCDate": "2019-02-15",
+      "unixTimeStamp": "1550188800",
+      "value": "122.02"
+    },
+    {
+      "UTCDate": "2019-02-16",
+      "unixTimeStamp": "1550275200",
+      "value": "123.26"
+    },
+    {
+      "UTCDate": "2019-02-17",
+      "unixTimeStamp": "1550361600",
+      "value": "134.28"
+    },
+    {
+      "UTCDate": "2019-02-18",
+      "unixTimeStamp": "1550448000",
+      "value": "146.53"
+    },
+    {
+      "UTCDate": "2019-02-19",
+      "unixTimeStamp": "1550534400",
+      "value": "144.40"
+    },
+    {
+      "UTCDate": "2019-02-20",
+      "unixTimeStamp": "1550620800",
+      "value": "149.23"
+    },
+    {
+      "UTCDate": "2019-02-21",
+      "unixTimeStamp": "1550707200",
+      "value": "146.36"
+    },
+    {
+      "UTCDate": "2019-02-22",
+      "unixTimeStamp": "1550793600",
+      "value": "149.04"
+    },
+    {
+      "UTCDate": "2019-02-23",
+      "unixTimeStamp": "1550880000",
+      "value": "159.48"
+    },
+    {
+      "UTCDate": "2019-02-24",
+      "unixTimeStamp": "1550966400",
+      "value": "133.42"
+    },
+    {
+      "UTCDate": "2019-02-25",
+      "unixTimeStamp": "1551052800",
+      "value": "139.02"
+    },
+    {
+      "UTCDate": "2019-02-26",
+      "unixTimeStamp": "1551139200",
+      "value": "137.12"
+    },
+    {
+      "UTCDate": "2019-02-27",
+      "unixTimeStamp": "1551225600",
+      "value": "135.94"
+    },
+    {
+      "UTCDate": "2019-02-28",
+      "unixTimeStamp": "1551312000",
+      "value": "136.29"
+    }
+  ]
+}

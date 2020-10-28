@@ -1,0 +1,10 @@
+{
+  "method": "get_hist_eth_balance_for_address_by_block_no",
+  "module": "pro",
+  "kwargs": {
+    "address": "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae",
+    "block_no": "8000000"
+  },
+  "log_timestamp": "2020-10-28-11:55:05",
+  "res": "610538078574759898951277"
+}

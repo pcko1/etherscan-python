@@ -1,0 +1,11 @@
+{
+  "method": "get_hist_erc20_token_account_balance_for_token_contract_address_by_block_no",
+  "module": "pro",
+  "kwargs": {
+    "contract_address": "0x57d90b64a1a57749b0f932f1a3395792e12e7055",
+    "address": "0xe04f27eb70e025b78871a2ad7eabe85e61212761",
+    "block_no": "8000000"
+  },
+  "log_timestamp": "2020-10-28-11:55:11",
+  "res": "135499"
+}
