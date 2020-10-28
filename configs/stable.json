@@ -391,7 +391,7 @@
       "sort": "asc"
     }
   },
-  "get_eth_daily_avg_gas_price": {
+  "get_eth_daily_average_gas_price": {
     "module": "pro",
     "kwargs": {
       "start_date": "2019-02-01",
@@ -423,7 +423,7 @@
       "sort": "asc"
     }
   },
-  "get_daily_avg_network_hash_rate": {
+  "get_daily_average_network_hash_rate": {
     "module": "pro",
     "kwargs": {
       "start_date": "2019-02-01",
@@ -439,7 +439,7 @@
       "sort": "asc"
     }
   },
-  "get_daily_avg_network_difficulty": {
+  "get_daily_average_network_difficulty": {
     "module": "pro",
     "kwargs": {
       "start_date": "2019-02-01",

@@ -211,7 +211,7 @@ class Pro:
         return url
 
     @staticmethod
-    def get_eth_daily_avg_gas_price(
+    def get_eth_daily_average_gas_price(
         start_date: int,
         end_date: int,
         sort: str,
@@ -291,7 +291,7 @@ class Pro:
         return url
 
     @staticmethod
-    def get_daily_avg_network_hash_rate(
+    def get_daily_average_network_hash_rate(
         start_date: int,
         end_date: int,
         sort: str,
@@ -331,7 +331,7 @@ class Pro:
         return url
 
     @staticmethod
-    def get_daily_avg_network_difficulty(
+    def get_daily_average_network_difficulty(
         start_date: int,
         end_date: int,
         sort: str,
