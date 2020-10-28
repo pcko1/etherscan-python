@@ -2,11 +2,11 @@
   "method": "get_eth_last_price",
   "module": "stats",
   "kwargs": {},
-  "log_timestamp": "2020-10-01-09:43:03",
+  "log_timestamp": "2020-10-28-12:01:57",
   "res": {
-    "ethbtc": "0.03374",
-    "ethbtc_timestamp": "1601545373",
-    "ethusd": "367.74",
-    "ethusd_timestamp": "1601545371"
+    "ethbtc": "0.02905",
+    "ethbtc_timestamp": "1603886398",
+    "ethusd": "387.25",
+    "ethusd_timestamp": "1603886399"
   }
 }

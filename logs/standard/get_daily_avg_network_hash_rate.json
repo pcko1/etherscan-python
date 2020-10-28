@@ -1,0 +1,152 @@
+{
+  "method": "get_daily_avg_network_hash_rate",
+  "module": "pro",
+  "kwargs": {
+    "start_date": "2019-02-01",
+    "end_date": "2019-02-28",
+    "sort": "asc"
+  },
+  "log_timestamp": "2020-10-28-12:01:44",
+  "res": [
+    {
+      "UTCDate": "2019-02-01",
+      "unixTimeStamp": "1548979200",
+      "networkHashRate": "143116.0140"
+    },
+    {
+      "UTCDate": "2019-02-02",
+      "unixTimeStamp": "1549065600",
+      "networkHashRate": "143036.2313"
+    },
+    {
+      "UTCDate": "2019-02-03",
+      "unixTimeStamp": "1549152000",
+      "networkHashRate": "139150.9121"
+    },
+    {
+      "UTCDate": "2019-02-04",
+      "unixTimeStamp": "1549238400",
+      "networkHashRate": "141058.0782"
+    },
+    {
+      "UTCDate": "2019-02-05",
+      "unixTimeStamp": "1549324800",
+      "networkHashRate": "141593.6815"
+    },
+    {
+      "UTCDate": "2019-02-06",
+      "unixTimeStamp": "1549411200",
+      "networkHashRate": "139435.1741"
+    },
+    {
+      "UTCDate": "2019-02-07",
+      "unixTimeStamp": "1549497600",
+      "networkHashRate": "139449.9210"
+    },
+    {
+      "UTCDate": "2019-02-08",
+      "unixTimeStamp": "1549584000",
+      "networkHashRate": "142467.7242"
+    },
+    {
+      "UTCDate": "2019-02-09",
+      "unixTimeStamp": "1549670400",
+      "networkHashRate": "141162.9802"
+    },
+    {
+      "UTCDate": "2019-02-10",
+      "unixTimeStamp": "1549756800",
+      "networkHashRate": "145132.8832"
+    },
+    {
+      "UTCDate": "2019-02-11",
+      "unixTimeStamp": "1549843200",
+      "networkHashRate": "142235.6399"
+    },
+    {
+      "UTCDate": "2019-02-12",
+      "unixTimeStamp": "1549929600",
+      "networkHashRate": "147544.2715"
+    },
+    {
+      "UTCDate": "2019-02-13",
+      "unixTimeStamp": "1550016000",
+      "networkHashRate": "142540.4061"
+    },
+    {
+      "UTCDate": "2019-02-14",
+      "unixTimeStamp": "1550102400",
+      "networkHashRate": "140337.5751"
+    },
+    {
+      "UTCDate": "2019-02-15",
+      "unixTimeStamp": "1550188800",
+      "networkHashRate": "139939.2522"
+    },
+    {
+      "UTCDate": "2019-02-16",
+      "unixTimeStamp": "1550275200",
+      "networkHashRate": "144000.9622"
+    },
+    {
+      "UTCDate": "2019-02-17",
+      "unixTimeStamp": "1550361600",
+      "networkHashRate": "140520.5263"
+    },
+    {
+      "UTCDate": "2019-02-18",
+      "unixTimeStamp": "1550448000",
+      "networkHashRate": "144791.9973"
+    },
+    {
+      "UTCDate": "2019-02-19",
+      "unixTimeStamp": "1550534400",
+      "networkHashRate": "154063.7497"
+    },
+    {
+      "UTCDate": "2019-02-20",
+      "unixTimeStamp": "1550620800",
+      "networkHashRate": "152931.5965"
+    },
+    {
+      "UTCDate": "2019-02-21",
+      "unixTimeStamp": "1550707200",
+      "networkHashRate": "152031.7369"
+    },
+    {
+      "UTCDate": "2019-02-22",
+      "unixTimeStamp": "1550793600",
+      "networkHashRate": "150079.7621"
+    },
+    {
+      "UTCDate": "2019-02-23",
+      "unixTimeStamp": "1550880000",
+      "networkHashRate": "159998.9286"
+    },
+    {
+      "UTCDate": "2019-02-24",
+      "unixTimeStamp": "1550966400",
+      "networkHashRate": "156160.2762"
+    },
+    {
+      "UTCDate": "2019-02-25",
+      "unixTimeStamp": "1551052800",
+      "networkHashRate": "154106.7468"
+    },
+    {
+      "UTCDate": "2019-02-26",
+      "unixTimeStamp": "1551139200",
+      "networkHashRate": "156426.1998"
+    },
+    {
+      "UTCDate": "2019-02-27",
+      "unixTimeStamp": "1551225600",
+      "networkHashRate": "156143.0510"
+    },
+    {
+      "UTCDate": "2019-02-28",
+      "unixTimeStamp": "1551312000",
+      "networkHashRate": "157689.3983"
+    }
+  ]
+}
