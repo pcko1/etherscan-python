@@ -13,9 +13,8 @@ setup(
         "etherscan.enums",
         "etherscan.modules",
         "etherscan.utils",
-        "configs",
     ],
     install_requires=["requests", "coverage"],
-    package_data={"configs": ["*"]},
+    include_package_data=True,
     zip_safe=False,
 )
