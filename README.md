@@ -190,11 +190,7 @@ In `python`, create a client with your personal [Etherscan.io](https://etherscan
 
 ``` python
 from etherscan import Etherscan
-
-api_key = YOUR_API_KEY # use quotation marks because it is a Python string
-config_path = "configs/stable.json"
-
-eth = Etherscan.from_config(config_path, api_key)
+eth = Etherscan(YOUR_API_KEY) # key in quotation marks
 ```
 
 Then you can call all available methods, e.g.:
