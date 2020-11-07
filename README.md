@@ -11,9 +11,9 @@
 
 A minimal, yet complete, Python API for [Etherscan.io](https://etherscan.io/). All standard and pro endpoints are provided.
 
-Available on [PyPI](https://pypi.org/project/etherscan-python/) and powered by [Etherscan.io APIs](https://etherscan.io/apis).
+Available on [PyPI](https://pypi.org/project/etherscan-python/) and powered by [Etherscan.io APIs](https://etherscan.io/apis#misc).
 
-Feel free to leave a :star: or [cite](#cite) us :scroll: if you found this package useful.
+Feel free to leave a :star: or [cite](#cite) :scroll: the package if you found it useful.
 
 ___
 
