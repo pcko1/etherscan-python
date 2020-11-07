@@ -9,11 +9,12 @@
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
 
-A minimal, yet complete, python API for [Etherscan.io](https://etherscan.io/). Available on [PyPI](https://pypi.org/project/etherscan-python/).
+A minimal, yet complete, Python API for [Etherscan.io](https://etherscan.io/). All standard and pro endpoints are provided.
 
-All FREE and PRO endpoints are provided.
+Available on [PyPI](https://pypi.org/project/etherscan-python/) and powered by [Etherscan.io APIs](https://etherscan.io/apis).
 
-Powered by [Etherscan.io APIs](https://etherscan.io/apis).
+Feel free to leave a :star: or [cite](#cite) us :scroll: if you found this package useful.
+
 ___
 
 
