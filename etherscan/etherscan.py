@@ -1,20 +1,27 @@
 import json
+from importlib import resources
 
 import requests
 
 import etherscan
+from etherscan import configs
 from etherscan.enums.fields_enum import FieldsEnum as fields
 from etherscan.utils.parsing import ResponseParser as parser
 
 
 class Etherscan:
+    def __new__(cls, api_key: str):
+        with resources.path(configs, "stable.json") as path:
+            config_path = str(path)
+        return cls.from_config(api_key=api_key, config_path=config_path)
+
     @staticmethod
     def __load_config(config_path: str) -> dict:
         with open(config_path, "r") as f:
             return json.load(f)
 
     @staticmethod
-    def __run(func, api_key):
+    def __run(func, api_key: str):
         def wrapper(*args, **kwargs):
             url = (
                 f"{fields.PREFIX}"
@@ -28,7 +35,7 @@ class Etherscan:
         return wrapper
 
     @classmethod
-    def from_config(cls, config_path: str, api_key: str):
+    def from_config(cls, api_key: str, config_path: str):
         config = cls.__load_config(config_path)
         for func, v in config.items():
             if not func.startswith("_"):  # disabled if _
