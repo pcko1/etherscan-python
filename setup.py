@@ -14,7 +14,7 @@ setup(
         "etherscan.modules",
         "etherscan.utils",
     ],
-    install_requires=["requests"],
+    install_requires=["requests", "coverage"],
     include_package_data=True,
     zip_safe=False,
 )
