@@ -190,7 +190,7 @@ The tests also include the PRO endpoints so if your key is not PRO, the correspo
 In `python`, create a client with your personal [Etherscan.io](https://etherscan.io/) API key:
 
 ``` python
-from etherscan import Etherscan
+from etherscan.etherscan import Etherscan
 eth = Etherscan(YOUR_API_KEY) # key in quotation marks
 ```
 
