@@ -1,11 +1,12 @@
 import json
 from datetime import datetime
+
 import os
 from unittest import TestCase
 
 from etherscan.etherscan import Etherscan
 
-CONFIG_PATH = "configs/stable.json"
+CONFIG_PATH = "etherscan/configs/stable.json"
 API_KEY = os.environ["API_KEY"]  # Encrypted env var by Travis
 
 
@@ -25,7 +26,7 @@ class Case(TestCase):
     def test_methods(self):
         print(f"\nMODULE: {self._MODULE}")
         config = load(CONFIG_PATH)
-        etherscan = Etherscan.from_config(CONFIG_PATH, API_KEY)
+        etherscan = Etherscan(API_KEY)
         for fun, v in config.items():
             if not fun.startswith("_"):  # disabled if _
                 if v["module"] == self._MODULE:
