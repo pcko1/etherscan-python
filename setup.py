@@ -10,6 +10,7 @@ setup(
     license="MIT",
     packages=[
         "etherscan",
+        "etherscan.configs",
         "etherscan.enums",
         "etherscan.modules",
         "etherscan.utils",
