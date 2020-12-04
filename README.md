@@ -189,7 +189,7 @@ The tests also include the PRO endpoints so if your key is not PRO, the correspo
 In `python`, create a client with your personal [Etherscan.io](https://etherscan.io/) API key:
 
 ``` python
-from etherscan.etherscan import Etherscan
+from etherscan import Etherscan
 eth = Etherscan(YOUR_API_KEY) # key in quotation marks
 ```
 
@@ -234,7 +234,7 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/etherscan-python (2020)*. doi:10.5281/zenodo.4256826
+Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/etherscan-python (2020)*. doi:10.5281/zenodo.4306855
 
 or in ```bibtex```:
 
@@ -246,7 +246,7 @@ or in ```bibtex```:
   publisher = {GitHub},
   journal = {GitHub repository},
   url = {https://github.com/pcko1/etherscan-python},
-  doi = {10.5281/zenodo.4256826}
+  doi = {10.5281/zenodo.4306855}
 }
 ```
 
