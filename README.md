@@ -148,7 +148,6 @@ Before proceeding, you should register an account on [Etherscan.io](https://ethe
 
 If you wish to have access to the PRO endpoints, you should obtain elevated privileges via Etherscan's subscription service.
 
-``` bash
 Install from source:
 
 ``` bash
