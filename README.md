@@ -148,25 +148,14 @@ Before proceeding, you should register an account on [Etherscan.io](https://ethe
 
 If you wish to have access to the PRO endpoints, you should obtain elevated privileges via Etherscan's subscription service.
 
-Assuming [conda](https://docs.conda.io/en/latest/miniconda.html) is already installed on your system, first create the environment:
+``` bash
+Install from source:
 
 ``` bash
-conda env create -f env.yml
+pip install git+https://github.com/pcko1/etherscan-python.git
 ```
 
-Activate the environment:
-
-``` bash
-conda activate etherscan-python
-```
-
-Then, install the package:
-
-``` bash
-pip install .
-```
-
-Alternatively, you can install it from [PyPI](https://pypi.org/project/etherscan-python/):
+Alternatively, install from [PyPI](https://pypi.org/project/etherscan-python/):
 
 ```bash
 pip install etherscan-python
