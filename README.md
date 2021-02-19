@@ -5,7 +5,9 @@
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6db2e36886ee46f58720c6131ef58dd6)](https://app.codacy.com/gh/pcko1/etherscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/etherscan-python&utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/94c15c6d8b1ec869a7fd/maintainability)](https://codeclimate.com/github/pcko1/etherscan-python/maintainability)
+[![](https://img.shields.io/codeclimate/tech-debt/pcko1/etherscan-python)](https://codeclimate.com/github/pcko1/etherscan-python)
 [![CodeFactor](https://www.codefactor.io/repository/github/pcko1/etherscan-python/badge)](https://www.codefactor.io/repository/github/pcko1/etherscan-python)
+
 [![PyPI](https://badge.fury.io/py/etherscan-python.svg)](https://badge.fury.io/py/etherscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
