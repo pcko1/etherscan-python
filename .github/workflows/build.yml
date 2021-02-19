@@ -28,6 +28,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest
       run: |
-        export API_KEY=${{ secrets.ETHERSCAN_API_KEY }}
+        export API_KEY=${{ secrets.ETHERSCAN_API_KEY2 }}
         bash run_tests.sh API_KEY
         bash <(curl -s https://codecov.io/bash)
