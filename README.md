@@ -9,7 +9,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/pcko1/etherscan-python/badge)](https://www.codefactor.io/repository/github/pcko1/etherscan-python)
 
 [![PyPI](https://badge.fury.io/py/etherscan-python.svg)](https://badge.fury.io/py/etherscan-python)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/etherscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
