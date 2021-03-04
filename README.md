@@ -227,17 +227,16 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/etherscan-python (2020)*. doi:10.5281/zenodo.4306855
+Kotsias, P. C., pcko1/etherscan-python. *https://github.com/pcko1/etherscan-python (2020)*. doi:10.5281/zenodo.4306855
 
 or in ```bibtex```:
 
 ```bibtex
 @misc{Kotsias2020,
   author = {Kotsias, P.C.},
-  title = {A Python API for Etherscan.io},
+  title = {pcko1/etherscan-python},
   year = {2020},
-  publisher = {GitHub},
-  journal = {GitHub repository},
+  publisher = {Zenodo},
   url = {https://github.com/pcko1/etherscan-python},
   doi = {10.5281/zenodo.4306855}
 }
