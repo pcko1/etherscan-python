@@ -14,7 +14,7 @@
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
 
-A minimal, yet complete, Python API for [Etherscan.io](https://etherscan.io/). All standard and pro endpoints are provided.
+A minimal, yet complete, Python API for [Etherscan.io](https://etherscan.io/). All standard and pro endpoints are provided. Görli, Kovan, Rinkeby and Ropsten endpoints are supported.
 
 Available on [PyPI](https://pypi.org/project/etherscan-python/). Powered by [Etherscan.io APIs](https://etherscan.io/apis#misc).
 
@@ -192,6 +192,10 @@ Then you can call all available methods, e.g.:
 eth.get_eth_balance(address="0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a")
 
 > '40891631566070000000000'
+```
+You can also choose one of the other testnets:
+``` python
+eth = Etherscan(YOUR_API_KEY, net="ropsten") # net name is case-insensitive, default is main
 ```
 
 ## Examples
