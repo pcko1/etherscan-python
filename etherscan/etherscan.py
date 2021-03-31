@@ -29,7 +29,7 @@ class Etherscan:
                 f"{fields.API_KEY}"
                 f"{api_key}"
             )
-            r = requests.get(url, headers={'User-Agent':''})
+            r = requests.get(url, headers={"User-Agent": ""})
             return parser.parse(r)
 
         return wrapper
