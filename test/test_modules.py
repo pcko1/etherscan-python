@@ -6,7 +6,7 @@ from unittest import TestCase
 
 from etherscan.etherscan import Etherscan
 
-CONFIG_PATH = "etherscan/configs/stable.json"
+CONFIG_PATH = "etherscan/configs/{}-stable.json"
 API_KEY = os.environ["API_KEY"]  # Encrypted env var by Travis
 
 
@@ -22,18 +22,20 @@ def dump(data, fname):
 
 class Case(TestCase):
     _MODULE = ""
+    _NETS = ["MAIN", "GOERLI", "KOVAN", "RINKEBY", "ROPSTEN"]
 
-    def test_methods(self):
-        print(f"\nMODULE: {self._MODULE}")
-        config = load(CONFIG_PATH)
-        etherscan = Etherscan(API_KEY)
+    def methods(self, net):
+        print(f"\nNET: {net}")
+        print(f"MODULE: {self._MODULE}")
+        config = load(CONFIG_PATH.format(net))
+        etherscan = Etherscan(API_KEY, net)
         for fun, v in config.items():
             if not fun.startswith("_"):  # disabled if _
                 if v["module"] == self._MODULE:
                     res = getattr(etherscan, fun)(**v["kwargs"])
                     print(f"METHOD: {fun}, RTYPE: {type(res)}")
                     # Create log files (will update existing ones)
-                    fname = f"logs/standard/{fun}.json"
+                    fname = f"logs/standard/{net}-{fun}.json"
                     log = {
                         "method": fun,
                         "module": v["module"],
@@ -42,6 +44,10 @@ class Case(TestCase):
                         "res": res,
                     }
                     dump(log, fname)
+
+    def test_net_methods(self):
+        for net in self._NETS:
+            self.methods(net)
 
 
 class TestAccounts(Case):
