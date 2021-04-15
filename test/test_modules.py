@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+import time
 
 import os
 from unittest import TestCase
@@ -44,6 +45,7 @@ class Case(TestCase):
                         "res": res,
                     }
                     dump(log, fname)
+                    time.sleep(0.1)
 
     def test_net_methods(self):
         for net in self._NETS:
