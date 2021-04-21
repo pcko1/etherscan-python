@@ -23,7 +23,7 @@ def dump(data, fname):
 
 class Case(TestCase):
     _MODULE = ""
-    _NETS = ["MAIN", "GOERLI", "KOVAN", "RINKEBY", "ROPSTEN"]
+    _NETS = ["MAIN", "KOVAN", "RINKEBY", "ROPSTEN"]
 
     def methods(self, net):
         print(f"\nNET: {net}")
