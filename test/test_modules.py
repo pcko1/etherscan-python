@@ -45,7 +45,7 @@ class Case(TestCase):
                         "res": res,
                     }
                     dump(log, fname)
-                    time.sleep(0.1)
+                    time.sleep(0.5)
 
     def test_net_methods(self):
         for net in self._NETS:
