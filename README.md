@@ -16,7 +16,7 @@
 
 A minimal, yet complete, Python API for [Etherscan.io](https://etherscan.io/). 
 
-All standard and pro endpoints are provided and Görli, Kovan, Rinkeby and Ropsten testnets are also supported.
+All standard and pro endpoints are provided. Kovan, Rinkeby and Ropsten testnets are also supported.
 
 Available on [PyPI](https://pypi.org/project/etherscan-python/). Powered by [Etherscan.io APIs](https://etherscan.io/apis#misc).
 
