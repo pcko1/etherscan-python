@@ -23,7 +23,10 @@ def dump(data, fname):
 
 class Case(TestCase):
     _MODULE = ""
-    _NETS = ["MAIN", "KOVAN", "RINKEBY", "ROPSTEN"]
+    if "TEST_ON_NETS" not in os.environ:
+        _NETS = ["MAIN", "KOVAN", "RINKEBY", "ROPSTEN"]
+    else:
+        _NETS = os.environ["TEST_ON_NETS"].split(",")
 
     def methods(self, net):
         print(f"\nNET: {net}")

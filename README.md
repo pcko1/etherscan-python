@@ -173,6 +173,10 @@ In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (
 
 ``` bash
 bash run_tests.sh YOUR_API_KEY
+
+# If you want to run tests on specific networks
+export TEST_ON_NETS="POLYGON,MUMBAI"
+bash run_tests.sh YOUR_API_KEY
 ````
 
 This will regenerate the logs under `logs/` with the most recent results and the timestamp of the execution.

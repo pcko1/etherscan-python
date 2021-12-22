@@ -3,3 +3,5 @@ include etherscan/configs/GOERLI-stable.json
 include etherscan/configs/KOVAN-stable.json
 include etherscan/configs/RINKEBY-stable.json
 include etherscan/configs/ROPSTEN-stable.json
+include etherscan/configs/POLYGON-stable.json
+include etherscan/configs/MUMBAI-stable.json
