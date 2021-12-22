@@ -21,10 +21,10 @@ class Etherscan:
             return json.load(f)
 
     @staticmethod
-    def __run(func, api_key: str, net: str):
+    def __run(func, api_key: str, prefix: str):
         def wrapper(*args, **kwargs):
             url = (
-                f"{fields.PREFIX.format(net.lower()).replace('-main','')}"
+                f"{prefix}"
                 f"{func(*args, **kwargs)}"
                 f"{fields.API_KEY}"
                 f"{api_key}"
@@ -37,8 +37,12 @@ class Etherscan:
     @classmethod
     def from_config(cls, api_key: str, config_path: str, net: str):
         config = cls.__load_config(config_path)
+        if "_PREFIX" in config:
+            prefix = config["_PREFIX"]
+        else:
+            prefix = fields.PREFIX.format(net.lower()).replace('-main','')
         for func, v in config.items():
             if not func.startswith("_"):  # disabled if _
                 attr = getattr(getattr(etherscan, v["module"]), func)
-                setattr(cls, func, cls.__run(attr, api_key, net))
+                setattr(cls, func, cls.__run(attr, api_key, prefix))
         return cls
