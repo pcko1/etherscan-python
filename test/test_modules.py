@@ -29,7 +29,7 @@ class Case(TestCase):
         print(f"\nNET: {net}")
         print(f"MODULE: {self._MODULE}")
         config = load(CONFIG_PATH.format(net))
-        etherscan = Etherscan(API_KEY, net)
+        etherscan = Etherscan(api_key=API_KEY, net=net)
         for fun, v in config.items():
             if not fun.startswith("_"):  # disabled if _
                 if v["module"] == self._MODULE:
