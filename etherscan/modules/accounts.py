@@ -46,7 +46,7 @@ class Accounts:
     def get_normal_txs_by_address(
         address: str, startblock: int, endblock: int, sort: str,
     ) -> str:
-        # NOTE: Returns the last 10k events
+        # NOTE: Returns the first 10k events
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
