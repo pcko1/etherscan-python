@@ -246,6 +246,15 @@
       "sort": "asc"
     }
   },
+  "get_erc20_token_transfer_events_by_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x3ebe6781be6d436cb7999cfce8b52e40819721cb",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
   "get_erc20_token_transfer_events_by_contract_address_paginated": {
     "module": "accounts",
     "kwargs": {
