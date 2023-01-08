@@ -188,10 +188,35 @@ class Accounts:
             f"{sort}"
         )
         return url
+        
+    @staticmethod
+    def get_erc20_token_transfer_events_by_address_paginated(
+        address: str, page: int, offset: int, startblock: int, endblock: int, sort: str
+    ) -> str:
+
+        url = (
+            f"{fields.MODULE}"
+            f"{modules.ACCOUNT}"
+            f"{fields.ACTION}"
+            f"{actions.TOKENTX}"
+            f"{fields.ADDRESS}"
+            f"{address}"
+            f"{fields.START_BLOCK}"
+            f"{str(startblock)}"
+            f"{fields.END_BLOCK}"
+            f"{str(endblock)}"
+            f"{fields.SORT}"
+            f"{sort}"
+            f"{fields.PAGE}"
+            f"{str(page)}"
+            f"{fields.OFFSET}"
+            f"{str(offset)}"
+        )
+        return url
 
     @staticmethod
     def get_erc20_token_transfer_events_by_contract_address_paginated(
-        contract_address: str, page: int, offset: int, sort: str
+        contract_address: str, page: int, offset: int, startblock: int, endblock: int, sort: str
     ) -> str:
 
         url = (
@@ -201,6 +226,10 @@ class Accounts:
             f"{actions.TOKENTX}"
             f"{fields.CONTRACT_ADDRESS}"
             f"{contract_address}"
+            f"{fields.START_BLOCK}"
+            f"{str(startblock)}"
+            f"{fields.END_BLOCK}"
+            f"{str(endblock)}"
             f"{fields.SORT}"
             f"{sort}"
             f"{fields.PAGE}"
@@ -212,7 +241,7 @@ class Accounts:
 
     @staticmethod
     def get_erc20_token_transfer_events_by_address_and_contract_paginated(
-        contract_address: str, address: str, page: int, offset: int, sort: str
+        contract_address: str, address: str, page: int, offset: int, startblock: int, endblock: int, sort: str
     ) -> str:
 
         url = (
@@ -224,6 +253,10 @@ class Accounts:
             f"{contract_address}"
             f"{fields.ADDRESS}"
             f"{address}"
+            f"{fields.START_BLOCK}"
+            f"{str(startblock)}"
+            f"{fields.END_BLOCK}"
+            f"{str(endblock)}"
             f"{fields.SORT}"
             f"{sort}"
             f"{fields.PAGE}"
