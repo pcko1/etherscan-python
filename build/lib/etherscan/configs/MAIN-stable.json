@@ -41,13 +41,13 @@
       "address": "0x2910543af39aba0cd09dbb2d50200b3e800a63d2"
     }
   },
-  "get_proxy_transaction_receipt": {
+  9"get_proxy_transaction_receipt": {
     "module": "proxy",
     "kwargs": {
       "txhash": "0x1e2910a262b1008d0616a0beb24c1a491d78771baa54a33e66065e03b1f46bc1"
     }
   },
-  "get_proxy_call": {
+  ò"get_proxy_call": {
     "module": "proxy",
     "kwargs": {
       "to": "0xAEEF46DB4855E25702F8237E8f403FddcaF931C0",
