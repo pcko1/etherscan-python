@@ -10,10 +10,10 @@ from etherscan.utils.parsing import ResponseParser as parser
 
 
 class Etherscan:
-    def __new__(cls, api_key: str, net: str = "MAIN"):
+    def __new__(cls, api_key: str, endpoint: str = "https://api.etherscan.io/api?", net: str = "MAIN"):
         with resources.path(configs, f"{net.upper()}-stable.json") as path:
             config_path = str(path)
-        return cls.from_config(api_key=api_key, config_path=config_path, net=net)
+        return cls.from_config(api_key=api_key, endpoint=endpoint, config_path=config_path)
 
     @staticmethod
     def __load_config(config_path: str) -> dict:
@@ -21,10 +21,10 @@ class Etherscan:
             return json.load(f)
 
     @staticmethod
-    def __run(func, api_key: str, net: str):
+    def __run(func, endpoint: str, api_key: str):
         def wrapper(*args, **kwargs):
             url = (
-                f"{fields.PREFIX.format(net.lower()).replace('-main','')}"
+                f"{endpoint}"
                 f"{func(*args, **kwargs)}"
                 f"{fields.API_KEY}"
                 f"{api_key}"
@@ -35,10 +35,10 @@ class Etherscan:
         return wrapper
 
     @classmethod
-    def from_config(cls, api_key: str, config_path: str, net: str):
+    def from_config(cls, api_key: str, endpoint: str, config_path: str):
         config = cls.__load_config(config_path)
         for func, v in config.items():
             if not func.startswith("_"):  # disabled if _
                 attr = getattr(getattr(etherscan, v["module"]), func)
-                setattr(cls, func, cls.__run(attr, api_key, net))
+                setattr(cls, func, cls.__run(attr, endpoint=endpoint, api_key=api_key))
         return cls
